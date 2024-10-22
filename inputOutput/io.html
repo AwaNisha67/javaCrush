@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Bootstarp-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>CodeCrush</title>
+    <link rel="stylesheet" href="/eg.css">
+</head>
+<body>
+   
+    <main>
+
+         <nav class="container">
+            <div class="logoDiv">
+                <img class="logo"  alt="Logo"/>
+            </div>
+            <div class="list-items-div">
+                <ul class="lits-items-container">
+                    <li class="list-items"><a href="/index.html">main</a></li>
+                    <li class="list-items"><a href="/index.html">about</a></li>
+                    <li class="list-items"><a href="/practice.html">practice</a></li>
+                </ul>
+            </div>
+            <div class="search">
+                <!-- logo -->
+                <i class="bi bi-search"></i>
+            </div>
+        </nav> 
+
+    <div class="background-images">
+        <!-- <img  class="images" src="./images/dots.276a62aa.svg" alt="dotted background"> -->
+       <!-- <img style="top: -40px;" class="images" src="./images/bgblur.19fa1f96.svg" alt="graySparkle"> -->
+        <!-- <img src="./images/hammer.a618d04a.svg" alt="hammer" class="hammer"> -->
+        <img src="./images/spanner.3acd9d9d.svg" alt="spanner" class="spanner">
+    </div>
+
+   
+    <div class="table-super-div">
+        <div class="table-sub-div">
+            <div class="left-table-content">
+                <div class="left-table-paragraph-text">
+                    <p>Java Topics</p>
+                </div>
+                <a class="java-topics activeTopic" href="/inputOutput/io.html">Input/Output</a>
+                    <a class="java-topics" href="/arrays/solArrq1.html">Arrays</a>
+                    <a class="java-topics" href="/2dArray/2dArray.html">2d-Arrays</a>
+                    <a class="java-topics" href="/Strings/strings.html">Strings</a>
+                    <a class="java-topics" href="/inheritence/inhert1.html">Inheritence</a>
+                    <a class="java-topics" href="/interfaces/interfaces.html">Interfaces</a>
+                    <a class="java-topics" href="/package/package.html">Packages</a>
+                    <a class="java-topics" href="/exception handling/exceptions.html">Exception-Handling</a>
+                    <a class="java-topics " href="/jdbc/jdbc.html">JDBC</a>
+           </div>
+             <div class="right-table-content">
+                <div class="right-table-paragraph-text">
+                    <p>Input Output questions</p> 
+                </div>
+                <div class="inheritQuest">
+                    <div class="questionContainer">
+                        <!-- 1 -->
+                        <div class="ques">
+                            <div class="heading top">
+                                <h5>1. Enter the character from user using InputStreamReader</h5>
+                                <img src="images/cross.png" alt="" class="cross" />
+                            </div>
+                            <div class="overflowedDiv">
+                                <p>
+                                    <code>
+                                        
+                       <br> class Main{
+                       <br>     public static void main(String ap[]) throws java.io.IOException{
+                       <br>         java.io.InputStreamReader rder = new java.io.InputStreamReader(System.in);
+                       <br>         int x = rder.read();
+                       <br>         System.out.println(x);
+                       <br>     }
+                       <br> }
+                                    </code>
+                                </p>
+                            </div>
+                        </div>
+                         <!-- 2 -->
+                         <div class="ques">
+                            <div class="heading top">
+                                <h5>2. Enter the string from user using BufferedStreamReader</h5>
+                                <img src="images/cross.png" alt="" class="cross" />
+                            </div>
+                            <div class="overflowedDiv">
+                                <p>
+                                    <code>
+                       
+<br> class Main{
+    <br> public static void main(String ap[]) throws java.io.IOException{
+    <br> 	java.io.InputStreamReader rder = new java.io.InputStreamReader(System.in);
+    <br> 	java.io.BufferedReader br = new java.io.BufferedReader(rder);
+    <br> 		
+    <br> 		System.out.println(br.readLine());
+    <br> 	}
+    <br> }
+                                    </code>
+                                </p>
+                            </div>
+                        </div>
+                          <!-- 3 -->
+                          
+                        <div class="ques">
+                            <div class="heading top">
+                                <h5>3. Enter the integer from user using Scanner class</h5>
+                                <img src="images/cross.png" alt="" class="cross" />
+                            </div>
+                            <div class="overflowedDiv">
+                                <p>
+                                    <code>
+                                     <br>   import java.util.Scanner;
+                                     <br>   class Main{
+                                     <br>       public static void main(String ap[]){
+                                     <br>           Scanner input = new Scanner(System.in);
+                                     <br>           System.out.println("Enter an integer");
+                                     <br>           int x = input.nextInt();
+                                     <br>           System.out.println("You have entered:" + x);
+                                     <br>       }
+                                     <br>   
+                                     <br>   }
+                                    </code>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="ques">
+                            <div class="heading top">
+                                <h5>4. Enter the float from user using Scanner class.</h5>
+                                <img src="images/cross.png" alt="" class="cross" />
+                            </div>
+                            <div class="overflowedDiv">
+                                <p>
+                                    <code>
+<br>                                         import java.util.Scanner;
+<br> class Main{
+<br> 	public static void main(String ap[]){
+<br> 		Scanner input = new Scanner(System.in);
+<br> 		System.out.println("Enter a float number:");
+<br> 		Float x = input.nextFloat();
+<br> 		System.out.println("You have entered:" + x);
+<br> 	}
+<br> 
+<br> }
+<br> 
+<br> //output
+<br> Enter a float number:
+<br> 23.09
+<br> You have entered:23.09
+                                    </code>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="ques">
+                            <div class="heading top">
+                                <h5>5. Enter the double from user using Scanner class</h5>
+                                <img src="images/cross.png" alt="" class="cross" />
+                            </div>
+                            <div class="overflowedDiv">
+                                <p>
+                                    <code>
+                                       <br> import java.util.Scanner;
+                                       <br> class Main{
+                                       <br>     public static void main(String ap[]){
+                                       <br>         Scanner input = new Scanner(System.in);
+                                       <br>         System.out.println("Enter a Double number:");
+                                       <br>         Double x = input.nextDouble();
+                                       <br>         System.out.println("You have entered:" + x);
+                                       <br>     }
+                                       <br> 
+                                       <br> }
+                                       <br> //output
+                                       <br> Enter a Double number:
+                                       <br> 2555.2323
+                                       <br> You have entered:2555.2323
+                                    </code>
+                                </p>
+                            </div>
+                        </div>
+                       
+                        <div class="ques">
+                            <div class="heading top">
+                                <h5>6. Enter the boolean from user using Scanner class</h5>
+                                <img src="images/cross.png" alt="" class="cross" />
+                            </div>
+                            <div class="overflowedDiv">
+                                <p>
+                                    <code>
+<br>                                         import java.util.Scanner;
+<br> class Main{
+<br> 	public static void main(String ap[]){
+<br> 		Scanner input = new Scanner(System.in);
+<br> 		System.out.println("Enter a boolean value:");
+<br> 		Boolean x = input.nextBoolean();
+<br> 		System.out.println("You have entered:" + x);
+<br> 	}
+<br> 
+<br> }
+                                    </code>
+                                </p>
+                            </div>
+                        </div>
+                    
+
+
+                        <div class="ques">
+                            <div class="heading top">
+                                <h5>7. Enter the short integer from user using Scanner class</h5>
+                                <img src="images/cross.png" alt="" class="cross" />
+                            </div>
+                            <div class="overflowedDiv">
+                                <p>
+                                    <code>
+                                   <br>     import java.util.Scanner;
+                                   <br>     class Main{
+                                   <br>         public static void main(String ap[]){
+                                   <br>             Scanner input = new Scanner(System.in);
+                                   <br>             System.out.println("Enter a short integer:");
+                                   <br>             Short x = input.nextShort();
+                                   <br>             System.out.println("You have entered:" + x);
+                                   <br>         }
+                                   <br>     
+                                   <br>     }
+                                    </code>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="ques">
+                            <div class="heading top">
+                                <h5>8. Enter the long integer from user using Scanner class</h5>
+                                <img src="images/cross.png" alt="" class="cross" />
+                            </div>
+                            <div class="overflowedDiv">
+                                <p>
+                                    <code>
+<br>                                         import java.util.Scanner;
+<br> class Main{
+<br> 	public static void main(String ap[]){
+<br> 		Scanner input = new Scanner(System.in);
+<br> 		System.out.println("Enter a long integer:");
+<br> 		Long x = input.nextLong();
+<br> 		System.out.println("You have entered:" + x);
+<br> 	}
+<br> 
+<br> }
+                                    </code>
+                                </p>
+                            </div>
+                        </div>
+                    
+                    </div>
+                </div>
+            </div>
+                   
+        </div> 
+          
+    </div>
+
+    </main>
+<script src="/script.js"></script>
+</body>
+</html>
