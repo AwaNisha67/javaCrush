@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Bootstarp-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="icon" type="image/x-icon"href="/images/code.png">
+    <title>CodeCrush</title>
+    <link rel="stylesheet" href="/eg.css">
+</head>
+<body>
+   
+    <main>
+
+         <nav class="container">
+            <div class="logoDiv">
+                <img class="logo"  alt="Logo" src="/images/clogo1.png"/>
+            </div>
+            <div class="list-items-div">
+                <ul class="lits-items-container">
+                    <li class="list-items"><a href="/index.html">main</a></li>
+                    <li class="list-items"><a href="/index.html">about</a></li>
+                    <li class="list-items"><a href="/practice.html">practice</a></li>
+                </ul>
+            </div>
+            <div class="search">
+                <!-- logo -->
+                <i class="bi bi-search"></i>
+            </div>
+        </nav> 
+
+    <div class="background-images">
+        <!-- <img  class="images" src="./images/dots.276a62aa.svg" alt="dotted background"> -->
+       <!-- <img style="top: -40px;" class="images" src="./images/bgblur.19fa1f96.svg" alt="graySparkle"> -->
+        <!-- <img src="./images/hammer.a618d04a.svg" alt="hammer" class="hammer"> -->
+        <img src="./images/spanner.3acd9d9d.svg" alt="spanner" class="spanner">
+    </div>
+
+   
+    <div class="table-super-div">
+        <div class="table-sub-div">
+            <div class="left-table-content">
+                <div class="left-table-paragraph-text">
+                    <p>Java Topics</p>
+                </div>
+                <a class="java-topics activeTopic" href="/exception handling/exceptions.html">Exception-Handling</a>
+                <a class="java-topics" href="/arrays/solArrq1.html">Arrays</a>
+                <a class="java-topics" href="/2dArray/2dArray.html">2d-Arrays</a>
+                <a class="java-topics" href="/Strings/strings.html">Strings</a>
+                <a class="java-topics" href="/inheritence/inhert1.html">Inheritence</a>
+                <a class="java-topics" href="/interfaces/interfaces.html">Interfaces</a>
+                <a class="java-topics" href="/package/package.html">Packages</a>
+                <a class="java-topics" href="/inputOutput/io.html">Input/Output</a>
+                <a class="java-topics" href="/jdbc/jdbc.html">JDBC</a>
+                <a class="java-topics" href="/awt/awt.html" >AWT</a>
+                <a class="java-topics" href="/data conversion/dc1.html">Data Conversion</a>
+                <a class="java-topics" href="/delegation eventModel/dEM.html">Delegation Event model</a>
+                <a class="java-topics" href="/multithreading/multithreading.html">Multithreading</a>
+                <a style="display: none;" class="java-topics" href="/basics construct/basicConstruct.html" >Basic Construct</a>
+           </div>
+             <div class="right-table-content">
+                <div class="right-table-paragraph-text">
+                    <p>Questions</p> 
+                </div>
+                <div class="inheritQuest">
+                    <div class="questionContainer">
+                        <!-- 1 -->
+                        <div class="ques">
+                            <div class="heading top">
+                                <h5>1.Write a Java program that throws an exception and catch it using a try-catch block.</h5>
+                                <img src="images/cross.png" alt="" class="cross" />
+                            </div>
+                            <div class="overflowedDiv">
+                                <p>
+                                    <code>
+                        <br>                class Main{
+                        <br>                    public static void main(String ap[]){
+                        <br>                        try{
+                        <br>                        int arr[] = null;
+                        <br>                        System.out.println(arr[1]);
+                        <br>                        }
+                        <br>                        catch(Exception e){
+                        <br>                            System.out.println(e.getMessage());
+                        <br>                        }
+                        <br>                    }
+                        <br>                }
+                                    </code>
+                                </p>
+                            </div>
+                        </div>
+                        <!-- 2 -->
+                       
+                        <div class="ques">
+                            <div class="heading top">
+                                <h5>2. Write a Java program to create a method that takes an integer as a parameter and throws an exception if the number is odd.
+                                </h5>
+                                <img src="images/cross.png" alt="" class="cross" />
+                            </div>
+                            <div class="overflowedDiv">
+                                <p>
+                                    <code>
+                <br>                        import java.util.Scanner;
+                <br>        class myException extends Throwable{
+                <br>            public String getMessage(){
+                <br>                return "You have entered an odd number";
+                <br>            }
+                <br>        }
+                <br>        
+                <br>        class Main{
+                <br>            public static void main(String ap[]){
+                <br>                Scanner sc = new Scanner(System.in);		
+                <br>                int x = sc.nextInt();
+                <br>                try{
+                <br>                if(x%2 != 0){
+                <br>                    throw new myException();	
+                <br>                }else{
+                <br>                    System.out.println(x);
+                <br>                }
+                <br>                }
+                <br>                catch(myException e){
+                <br>                    System.out.println(e.getMessage());
+                <br>                }
+                <br>                    
+                <br>            }	
+                <br>        
+                <br>        }
+                                    </code>
+                                </p>
+                            </div>
+                        </div>
+<!-- 6 -->
+<div class="ques">
+    <div class="heading top">
+        <h5>6. Write a Java program that reads a list of integers from the user and throws an exception if any numbers are duplicates</h5>
+        <img src="images/cross.png" alt="" class="cross" />
+    </div>
+    <div class="overflowedDiv">
+        <p>
+            <code>
+           <br>     class myException extends Throwable{
+           <br>         public String getMessage(){
+           <br>             return "dublicate";
+           <br>         }
+           <br>     }
+           <br>     
+           <br>     class Main{
+           <br>         public static void main(String ap[]){
+           <br>             int arr[] = {10,10,30,40,50};
+           <br>             int i,j;
+           <br>             try{
+           <br>             for(i=0;i&lt;arr.length;i++){
+           <br>                 for(j=i+1;j&lt;arr.length;j++){
+           <br>                     if(arr[i] == arr[j]){
+           <br>                         throw new myException();
+           <br>                     }else{
+           <br>                         continue;
+           <br>                     }
+           <br>                 }	
+           <br>             }
+           <br>             }
+           <br>             catch(myException e){
+           <br>                 System.out.println(e.getMessage());
+           <br>             }
+           <br>                 
+           <br>         }
+           <br>     }
+            </code>
+        </p>
+    </div>
+</div>
+
+<!-- 7 -->
+<div class="ques">
+    <div class="heading top">
+        <h5>7. Write a Java program to create a method that takes a string as input and throws an exception if the string does not contain vowels.
+        </h5>
+        <img src="images/cross.png" alt="" class="cross" />
+    </div>
+    <div class="overflowedDiv">
+        <p>
+            <code>
+            <br>    class myException extends Throwable{
+            <br>        public String getMessage(){
+            <br>            return "This string doesnot contain a single vowel";
+            <br>        }
+            <br>    }
+            <br>    
+            <br>    class Main{
+            <br>        public static void main(String ap[]){
+            <br>        String st = "Hlll";
+            <br>        
+            <br>        try{
+            <br>            if(vowelChecker(st) == -1){
+            <br>                throw new myException();
+            <br>            }
+            <br>        }
+            <br>            catch(myException e){
+            <br>            System.out.println(e.getMessage());
+            <br>        }
+            <br>        }
+            <br>        static int vowelChecker(String st){
+            <br>            int i;
+            <br>            int x;
+            <br>            for(i=0;i&lt;st.length();i++){
+            <br>                char ch = st.charAt(i);
+            <br>                if(ch == 'a' || ch == 'e' ||ch == 'i' || ch == 'o' || ch == 'u'){
+            <br>                    return 1;
+            <br>                }
+            <br>            }
+            <br>            return -1;
+            <br>        }
+            <br>    }
+            </code>
+        </p>
+    </div>
+</div>
+<!-- 8 -->
+<div class="ques">
+    <div class="heading top">
+        <h5>8. Write a Java program to connect the Java API to Database, if connection not successful then throw an exception </h5>
+        <img src="images/cross.png" alt="" class="cross" />
+    </div>
+    <div class="overflowedDiv">
+        <p>
+            <code>
+          <br>      import java.sql.Connection;
+          <br>      import java.sql.DriverManager;
+          <br>      import java.sql.SQLException;
+          <br>      
+          <br>      public class Main {
+          <br>          public static void main(String[] args) {
+          <br>              String url = "jdbc:mysql://localhost:3306/javadb"; 
+          <br>              String user = "root"; 
+          <br>              String password = "your_password"; 
+          <br>              Connection c1 = null;
+          <br>              try {
+          <br>                  c1 = DriverManager.getConnection(url, user, password);
+          <br>                  System.out.println("Connection to the database was successful!");
+          <br>              } catch (SQLException e) {
+          <br>                  System.out.println("Failed to connect to the database: " + e.getMessage());
+          <br>              } 
+          <br>          }
+          <br>      }
+          <br>      
+            </code>
+        </p>
+    </div>
+</div>
+
+<!-- 9 -->
+<div class="ques">
+    <div class="heading top">
+        <h5>9. Write a Java program to manage the driver with path, username and password, if not successful then throw an exception</h5>
+        <img src="images/cross.png" alt="" class="cross" />
+    </div>
+    <div class="overflowedDiv">
+        <p>
+            <code>
+<br>                 import java.sql.Connection;
+<br> import java.sql.DriverManager;
+<br> import java.sql.SQLException;
+<br> 
+<br> public class Main{
+<br>     public static void main(String[] args) {
+<br>       
+<br>         String jdbcDriver = "com.mysql.cj.jdbc.Driver"; 
+<br>         String url = "jdbc:mysql://localhost:3306/javadb"; 
+<br>         String user = "root"; 
+<br>         String password = "your_password";
+<br>         Connection connection = null;
+<br>         try {
+<br>             Class.forName(jdbcDriver);
+<br>             System.out.println("Driver loaded successfully.");
+<br>             connection = DriverManager.getConnection(url, user, password);
+<br>             System.out.println("Connection to the database was successful!");
+<br>         } catch (ClassNotFoundException e) {
+<br>             System.out.println("JDBC Driver not found: " + e.getMessage());
+<br>         } catch (SQLException e) {
+<br>             System.out.println("Failed to connect to the database: " + e.getMessage());
+<br>           
+<br>         }
+<br>     }
+<br> }
+                
+            </code>
+        </p>
+    </div>
+</div>
+
+<!-- 10 -->
+<div class="ques">
+    <div class="heading top">
+        <h5>10. Write a Java program to throw the SQL Query, insert, delete, update, if not successful then throw an exception</h5>
+        <img src="images/cross.png" alt="" class="cross" />
+    </div>
+    <div class="overflowedDiv">
+        <p>
+            <code>
+                import java.sql.*;<br><br>
+
+                class Main{<br>
+                    public static void main(<span>String</span> ap[]){<br>
+                        //load Drivers <br> 
+                        try{<br>
+                        <span>Class</span>.forName("com.mysql.cj.jdbc.Driver");<br>
+                        //connection<br>
+                        <span>String</span> path = "jdbc:mysql://localhost:3306/javadb";<br>
+                        <span>String</span> user = "root";<br>
+                        <span>String</span> pass = "9780314063";<br>
+                        <br>
+                        <span>Connection</span> c1 = <span>DriverManager</span>.getConnection(path,user,pass);<br>
+                        }catch(java.lang.<span style="color: rgba(255, 0, 0, 0.718);">ClassNotFoundException</span> e){<br>
+                           <span>System</span>.out.println("ClassNotFoundException");<br>
+                        }catch(<span style="color: rgba(255, 0, 0, 0.718);">SQLException</span> e){<br>
+                            <span>System</span>.out.println("SQLException");<br>	
+                        }<br>
+                        <span>System</span>.out.println("Connection has been established");<br>
+                    }<br>
+                }<br>
+            </code>
+        </p>
+    </div>
+</div>
+
+<!-- 11 -->
+<div class="ques">
+    <div class="heading top">
+        <h5>11. Write a Java program to show an example of throws Keyword</h5>
+        <img src="images/cross.png" alt="" class="cross" />
+    </div>
+    <div class="overflowedDiv">
+        <p>
+            <code>
+                <br> class myException extends Throwable{
+                <br>     public String getMessage(){
+                <br>         return "negative number entered";
+                <br>     }
+                <br> }
+                <br> 
+                <br> class Main{
+                <br>     public static void main(String ap[]){
+                <br>         try{
+                <br>         display(ap[0]);	
+                <br>         }
+                <br>         catch(myException e){
+                <br>             System.out.println(e.getMessage());
+                <br>         }
+                <br>         catch(ArrayIndexOutOfBoundsException e){
+                <br>             System.out.println(e.getMessage());
+                <br>         }
+                <br>     }
+                <br>     static void display(String s) throws myException{
+                <br>         if(Integer.parseInt(s)&lt;0){
+                <br>             throw new myException();
+                <br>         }
+                <br>         System.out.println(s);
+                <br>     }
+                <br> }            
+            </code>
+        </p>
+    </div>
+</div>
+
+<!-- 12 -->
+<div class="ques">
+    <div class="heading top">
+        <h5>12. Write a Java program to show an example of multiple catch</h5>
+        <img src="images/cross.png" alt="" class="cross" />
+    </div>
+    <div class="overflowedDiv">
+        <p>
+            <code>
+                <br> class Main{
+                <br>     public static void main(String ap[]){
+                <br>         try{
+                <br>             System.out.println(Integer.parseInt(ap[0]));
+                <br>         }
+                <br>         catch(ArrayIndexOutOfBoundsException e){
+                <br>             System.out.println(e.getMessage());
+                <br>         }
+                <br>         catch(NumberFormatException e){
+                <br>             System.out.println(e.getMessage());
+                <br>         }
+                <br>     }
+                <br> }
+                
+            </code>
+        </p>
+    </div>
+</div>
+
+<!-- 13 -->
+<div class="ques">
+    <div class="heading top">
+        <h5>13. Write a Java program to show an example of nested try block.</h5>
+        
+        <img src="images/cross.png" alt="" class="cross" />
+    </div>
+    <div class="overflowedDiv">
+        <p>
+            <code>
+
+               <br> class Main{
+               <br>     public static void main(String ap[]) {
+               <br>         try {
+               <br>             System.out.println("Outer try block");
+               <br> 
+               <br>              int[] numbers = new int[5];
+               <br>             
+               <br>             try {
+               <br>                 numbers[10] = 100; 
+               <br>                 
+               <br>             } catch (ArrayIndexOutOfBoundsException e) {
+               <br>                 System.out.println(e.getMessage());
+               <br>             }
+               <br>         
+               <br>         int result = 10 / 0;
+               <br> 
+               <br>         } catch (ArithmeticException e) {
+               <br> 
+               <br>             System.out.println(e.getMessage());
+               <br>         }
+               <br>         System.out.println("Program continued ");
+               <br>     }
+               <br> }
+                
+                
+            </code>
+        </p>
+    </div>
+</div>
+                    </div>
+                </div>
+            </div>
+                   
+        </div> 
+          
+    </div>
+
+    </main>
+<script src="/script.js"></script>
+</body>
+</html>
+
+

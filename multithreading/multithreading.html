@@ -1,0 +1,586 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Bootstarp-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>CodeCrush</title>
+    <link rel="stylesheet" href="/eg.css">
+</head>
+<body>
+   
+    <main>
+
+         <nav class="container">
+            <div class="logoDiv">
+                <img class="logo"  alt="Logo" src="/images/clogo1.png"/>
+            </div>
+            <div class="list-items-div">
+                <ul class="lits-items-container">
+                    <li class="list-items"><a href="/index.html">main</a></li>
+                    <li class="list-items"><a href="/index.html">about</a></li>
+                    <li class="list-items"><a href="/practice.html">practice</a></li>
+                </ul>
+            </div>
+            <div class="search">
+                <!-- logo -->
+                <i class="bi bi-search"></i>
+            </div>
+        </nav> 
+
+    <div class="background-images">
+        <!-- <img  class="images" src="./images/dots.276a62aa.svg" alt="dotted background"> -->
+       <!-- <img style="top: -40px;" class="images" src="./images/bgblur.19fa1f96.svg" alt="graySparkle"> -->
+        <!-- <img src="./images/hammer.a618d04a.svg" alt="hammer" class="hammer"> -->
+        <img src="./images/spanner.3acd9d9d.svg" alt="spanner" class="spanner">
+    </div>
+
+   
+    <div class="table-super-div">
+        <div class="table-sub-div">
+            <div class="left-table-content">
+                <div class="left-table-paragraph-text">
+                    <p>Java Topics</p>
+                </div>
+                <a class="java-topics activeTopic" href="/multithreading/multithreading.html">Multithreading</a>
+                <a class="java-topics" href="/arrays/solArrq1.html">Arrays</a>
+                <a class="java-topics" href="/2dArray/2dArray.html">2d-Arrays</a>
+                <a class="java-topics" href="/Strings/strings.html">Strings</a>
+                <a class="java-topics" href="/inheritence/inhert1.html">Inheritence</a>
+                <a class="java-topics" href="/interfaces/interfaces.html">Interfaces</a>
+                <a class="java-topics" href="/package/package.html">Packages</a>
+                <a class="java-topics" href="/inputOutput/io.html">Input/Output</a>
+                <a class="java-topics" href="/exception handling/exceptions.html">Exception-Handling</a>
+                <a class="java-topics" href="/inputOutput/io.html">Input/Output</a>
+                <a class="java-topics" href="/jdbc/jdbc.html">JDBC</a>
+                <a class="java-topics" href="/awt/awt.html" >AWT</a>
+                <a class="java-topics" href="/data conversion/dc1.html">Data Conversion</a>
+                <a class="java-topics" href="/delegation eventModel/dEM.html">Delegation Event model</a>
+                <a style="display: none;" class="java-topics" href="/basics construct/basicConstruct.html" >Basic Construct</a>
+           </div>
+             <div class="right-table-content">
+                <div class="right-table-paragraph-text">
+                    <p>Multithreading-Questions</p> 
+                </div>
+                <div class="inheritQuest">
+                    <div class="questionContainer">
+                        <!-- 1 -->
+                        <div class="ques">
+                            <div class="heading top">
+                                <h5>1. Write a Java program to create a basic Java thread that prints "Hello, World!" when executed.</h5>
+                                <img src="images/cross.png" alt="" class="cross" />
+                            </div>
+                            <div class="overflowedDiv">
+                                <p>
+                                    <code>
+                                        &nbsp;class HelloWorldThread extends Thread { <br>
+                                        &nbsp;&nbsp;&nbsp;public void run(){ <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("Hello, World!"); <br>
+                                        &nbsp;&nbsp;&nbsp;} <br>
+                                        &nbsp;&nbsp;&nbsp;public static void main(String ap[]){ <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;HelloWorldThread t1 = new HelloWorldThread(); <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;t1.start(); <br>
+                                        &nbsp;&nbsp;&nbsp;} <br>
+                                        &nbsp;} <br>
+                                    </code>
+                                </p>
+                            </div>
+                        </div>
+                        <!-- 2 -->
+                        <div class="ques">
+                            <div class="heading top">
+                                <h5>2. Write a Java program that creates two threads to find and print even and odd numbers from 1 to 20.</h5>
+                                <img src="images/cross.png" alt="" class="cross" />
+                            </div>
+                            <div class="overflowedDiv">
+                                <p>
+                                    <code>
+                                        &nbsp;class EvenNumbersThread extends Thread { <br>
+                                        &nbsp;&nbsp;&nbsp;public void run(){ <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for(int i = 1; i <= 20; i++){ <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(i % 2 == 0){ <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("Even: " + i); <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} <br>
+                                        &nbsp;&nbsp;&nbsp;} <br>
+                                        &nbsp;} <br>
+                                        &nbsp;class OddNumbersThread extends Thread { <br>
+                                        &nbsp;&nbsp;&nbsp;public void run(){ <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for(int i = 1; i <= 20; i++){ <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(i % 2 != 0){ <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("Odd: " + i); <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} <br>
+                                        &nbsp;&nbsp;&nbsp;} <br>
+                                        &nbsp;} <br>
+                                        &nbsp;public class EvenOddThreads { <br>
+                                        &nbsp;&nbsp;&nbsp;public static void main(String ap[]){ <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;EvenNumbersThread t1 = new EvenNumbersThread(); <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;OddNumbersThread t2 = new OddNumbersThread(); <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;t1.start(); <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;t2.start(); <br>
+                                        &nbsp;&nbsp;&nbsp;} <br>
+                                        &nbsp;} <br>
+                                    </code>
+                                </p>
+                            </div>
+                        </div>
+                        <!-- 3 -->
+                        <div class="ques">
+                            <div class="heading top">
+                                <h5>3. Write a Java program that sorts an array of integers using multiple threads.</h5>
+                                <img src="images/cross.png" alt="" class="cross" />
+                            </div>
+                            <div class="overflowedDiv">
+                                <p>
+                                    <code>
+                                        &nbsp;import java.util.Arrays; <br>
+                                        &nbsp;class SortThread extends Thread { <br>
+                                        &nbsp;&nbsp;&nbsp;int[] arr; <br>
+                                        &nbsp;&nbsp;&nbsp;SortThread(int[] arr){ <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.arr = arr; <br>
+                                        &nbsp;&nbsp;&nbsp;} <br>
+                                        &nbsp;&nbsp;&nbsp;public void run(){ <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Arrays.sort(arr); <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("Sorted Array: " + Arrays.toString(arr)); <br>
+                                        &nbsp;&nbsp;&nbsp;} <br>
+                                        &nbsp;} <br>
+                                        &nbsp;public class ArraySorter { <br>
+                                        &nbsp;&nbsp;&nbsp;public static void main(String ap[]){ <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;int[] arr = {5, 3, 8, 1, 2, 9}; <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SortThread t1 = new SortThread(arr); <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;t1.start(); <br>
+                                        &nbsp;&nbsp;&nbsp;} <br>
+                                        &nbsp;} <br>
+                                    </code>
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <!-- 4 -->
+                        <div class="ques">
+                            <div class="heading top">
+                                <h5>4. Write a Java program that performs matrix multiplication using multiple threads.</h5>
+                                <img src="images/cross.png" alt="" class="cross" />
+                            </div>
+                            <div class="overflowedDiv">
+                                <p>
+                                    <code>
+                                        &nbsp;class MatrixMultiplicationThread extends Thread { <br>
+                                        &nbsp;&nbsp;&nbsp;int[][] A, B, result; <br>
+                                        &nbsp;&nbsp;&nbsp;int row; <br>
+                                        &nbsp;&nbsp;&nbsp;MatrixMultiplicationThread(int[][] A, int[][] B, int[][] result, int row){ <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.A = A; <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.B = B; <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.result = result; <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.row = row; <br>
+                                        &nbsp;&nbsp;&nbsp;} <br>
+                                        &nbsp;&nbsp;&nbsp;public void run(){ <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for(int i = 0; i < B[0].length; i++){ <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;result[row][i] = 0; <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for(int j = 0; j < A[0].length; j++){ <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;result[row][i] += A[row][j] * B[j][i]; <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} <br>
+                                        &nbsp;&nbsp;&nbsp;} <br>
+                                        &nbsp;} <br>
+                                        &nbsp;public class MatrixMultiplication { <br>
+                                        &nbsp;&nbsp;&nbsp;public static void main(String ap[]){ <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;int[][] A = {{1, 2}, {3, 4}}; <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;int[][] B = {{5, 6}, {7, 8}}; <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;int[][] result = new int[2][2]; <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MatrixMultiplicationThread t1 = new MatrixMultiplicationThread(A, B, result, 0); <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MatrixMultiplicationThread t2 = new MatrixMultiplicationThread(A, B, result, 1); <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;t1.start(); <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;t2.start(); <br>
+                                        &nbsp;&nbsp;&nbsp;} <br>
+                                        &nbsp;} <br>
+                                    </code>
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <!-- 5 -->
+                        <div class="ques">
+                            <div class="heading top">
+                                <h5>5. Write a Java program that calculates the sum of all prime numbers up to a given limit using multiple threads.</h5>
+                                <img src="images/cross.png" alt="" class="cross" />
+                            </div>
+                            <div class="overflowedDiv">
+                                <p>
+                                    <code>
+                                        &nbsp;class PrimeSumThread extends Thread { <br>
+                                        &nbsp;&nbsp;&nbsp;int start, end; <br>
+                                        &nbsp;&nbsp;&nbsp;long sum = 0; <br>
+                                        &nbsp;&nbsp;&nbsp;PrimeSumThread(int start, int end){ <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.start = start; <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.end = end; <br>
+                                        &nbsp;&nbsp;&nbsp;} <br>
+                                        &nbsp;&nbsp;&nbsp;public void run(){ <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for(int i = start; i <= end; i++){ <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(isPrime(i)){ <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sum += i; <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} <br>
+                                        &nbsp;&nbsp;&nbsp;} <br>
+                                        &nbsp;&nbsp;&nbsp;public boolean isPrime(int num){ <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(num <= 1) return false; <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for(int i = 2; i <= Math.sqrt(num); i++){ <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(num % i == 0) return false; <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return true; <br>
+                                        &nbsp;&nbsp;&nbsp;} <br>
+                                        &nbsp;} <br>
+                                        &nbsp;public class PrimeSum { <br>
+                                        &nbsp;&nbsp;&nbsp;public static void main(String ap[]){ <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PrimeSumThread t1 = new PrimeSumThread(1, 5000); <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PrimeSumThread t2 = new PrimeSumThread(5001, 10000); <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;t1.start(); <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;t2.start(); <br>
+                                        &nbsp;&nbsp;&nbsp;} <br>
+                                        &nbsp;} <br>
+                                    </code>
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <!-- 6 -->
+                        <div class="ques">
+                            <div class="heading top">
+                                <h5>6. Write a Java program to implement a concurrent web crawler that crawls multiple websites simultaneously using threads.</h5>
+                                <img src="images/cross.png" alt="" class="cross" />
+                            </div>
+                            <div class="overflowedDiv">
+                                <p>
+                                    <code>
+                                        &nbsp;import java.net.*; <br>
+                                        &nbsp;import java.io.*; <br>
+                                        &nbsp;import java.util.concurrent.*; <br>
+                                        &nbsp;class WebCrawlerThread extends Thread { <br>
+                                        &nbsp;&nbsp;&nbsp;String url; <br>
+                                        &nbsp;&nbsp;&nbsp;WebCrawlerThread(String url){ <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.url = url; <br>
+                                        &nbsp;&nbsp;&nbsp;} <br>
+                                        &nbsp;&nbsp;&nbsp;public void run(){ <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;try{ <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;URL u = new URL(url); <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BufferedReader in = new BufferedReader(new InputStreamReader(u.openStream())); <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;String line; <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;while((line = in.readLine()) != null){ <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(line); <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;in.close(); <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} catch (IOException e) { <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;e.printStackTrace(); <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} <br>
+                                        &nbsp;&nbsp;&nbsp;} <br>
+                                        &nbsp;} <br>
+                                        &nbsp;public class WebCrawler { <br>
+                                        &nbsp;&nbsp;&nbsp;public static void main(String ap[]){ <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;WebCrawlerThread t1 = new WebCrawlerThread("https://example.com"); <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;WebCrawlerThread t2 = new WebCrawlerThread("https://example.org"); <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;t1.start(); <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;t2.start(); <br>
+                                        &nbsp;&nbsp;&nbsp;} <br>
+                                        &nbsp;} <br>
+                                    </code>
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <!-- 7 -->
+                        <div class="ques">
+                            <div class="heading top">
+                                <h5>7. Write a Java program that creates a bank account with concurrent deposits and withdrawals using threads.</h5>
+                                <img src="images/cross.png" alt="" class="cross" />
+                            </div>
+                            <div class="overflowedDiv">
+                                <p>
+                                    <code>
+                                        &nbsp;class BankAccount { <br>
+                                        &nbsp;&nbsp;&nbsp;private double balance; <br>
+                                        &nbsp;&nbsp;&nbsp;BankAccount(double balance){ <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.balance = balance; <br>
+                                        &nbsp;&nbsp;&nbsp;} <br>
+                                        &nbsp;&nbsp;&nbsp;public synchronized void deposit(double amount){ <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;balance += amount; <br>
+                                        &nbsp;&nbsp;&nbsp;} <br>
+                                        &nbsp;&nbsp;&nbsp;public synchronized void withdraw(double amount){ <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(balance >= amount){ <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;balance -= amount; <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} <br>
+                                        &nbsp;&nbsp;&nbsp;} <br>
+                                        &nbsp;&nbsp;&nbsp;public double getBalance(){ <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return balance; <br>
+                                        &nbsp;&nbsp;&nbsp;} <br>
+                                        &nbsp;} <br>
+                                        &nbsp;class DepositThread extends Thread { <br>
+                                        &nbsp;&nbsp;&nbsp;BankAccount account; <br>
+                                        &nbsp;&nbsp;&nbsp;double amount; <br>
+                                        &nbsp;&nbsp;&nbsp;DepositThread(BankAccount account, double amount){ <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.account = account; <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.amount = amount; <br>
+                                        &nbsp;&nbsp;&nbsp;} <br>
+                                        &nbsp;&nbsp;&nbsp;public void run(){ <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;account.deposit(amount); <br>
+                                        &nbsp;&nbsp;&nbsp;} <br>
+                                        &nbsp;} <br>
+                                        &nbsp;class WithdrawThread extends Thread { <br>
+                                        &nbsp;&nbsp;&nbsp;BankAccount account; <br>
+                                        &nbsp;&nbsp;&nbsp;double amount; <br>
+                                        &nbsp;&nbsp;&nbsp;WithdrawThread(BankAccount account, double amount){ <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.account = account; <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.amount = amount; <br>
+                                        &nbsp;&nbsp;&nbsp;} <br>
+                                        &nbsp;&nbsp;&nbsp;public void run(){ <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;account.withdraw(amount); <br>
+                                        &nbsp;&nbsp;&nbsp;} <br>
+                                        &nbsp;} <br>
+                                        &nbsp;public class Bank { <br>
+                                        &nbsp;&nbsp;&nbsp;public static void main(String ap[]){ <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BankAccount account = new BankAccount(1000); <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DepositThread t1 = new DepositThread(account, 500); <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;WithdrawThread t2 = new WithdrawThread(account, 200); <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;t1.start(); <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;t2.start(); <br>
+                                        &nbsp;&nbsp;&nbsp;} <br>
+                                        &nbsp;} <br>
+                                    </code>
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <!-- 8 -->
+                         <div class="ques">
+                            <div class="heading top">
+                                <h5>8. Create the program to create multiple threads by using Runnable interface.</h5>
+                                <img src="images/cross.png" alt="" class="cross" />
+                            </div>
+                            <div class="overflowedDiv">
+                                <p>
+                                    <code>
+                                        &nbsp;class MyRunnable implements Runnable { <br>
+                                        &nbsp;&nbsp;&nbsp;public void run(){ <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("Thread is running."); <br>
+                                        &nbsp;&nbsp;&nbsp;} <br>
+                                        &nbsp;} <br>
+                                        &nbsp;public class RunnableExample { <br>
+                                        &nbsp;&nbsp;&nbsp;public static void main(String ap[]){ <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Runnable r = new MyRunnable(); <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Thread t1 = new Thread(r); <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;t1.start(); <br>
+                                        &nbsp;&nbsp;&nbsp;} <br>
+                                        &nbsp;} <br>
+                                    </code>
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <!-- 9 -->
+                        <div class="ques">
+                            <div class="heading top">
+                                <h5>9. Create the program to create multiple threads by using Thread class.</h5>
+                                <img src="images/cross.png" alt="" class="cross" />
+                            </div>
+                            <div class="overflowedDiv">
+                                <p>
+                                    <code>
+                                        &nbsp;class MyThread extends Thread { <br>
+                                        &nbsp;&nbsp;&nbsp;public void run(){ <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("Thread is running."); <br>
+                                        &nbsp;&nbsp;&nbsp;} <br>
+                                        &nbsp;} <br>
+                                        &nbsp;public class ThreadExample { <br>
+                                        &nbsp;&nbsp;&nbsp;public static void main(String ap[]){ <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MyThread t1 = new MyThread(); <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MyThread t2 = new MyThread(); <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;t1.start(); <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;t2.start(); <br>
+                                        &nbsp;&nbsp;&nbsp;} <br>
+                                        &nbsp;} <br>
+                                    </code>
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <!-- 10 -->
+                        <div class="ques">
+                            <div class="heading top">
+                                <h5>10. Create the program to create multiple threads, set its name and its priority.</h5>
+                                <img src="images/cross.png" alt="" class="cross" />
+                            </div>
+                            <div class="overflowedDiv">
+                                <p>
+                                    <code>
+                                        &nbsp;class MyThread extends Thread { <br>
+                                        &nbsp;&nbsp;&nbsp;public void run(){ <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(Thread.currentThread().getName() + " is running with priority " + Thread.currentThread().getPriority()); <br>
+                                        &nbsp;&nbsp;&nbsp;} <br>
+                                        &nbsp;} <br>
+                                        &nbsp;public class ThreadExample { <br>
+                                        &nbsp;&nbsp;&nbsp;public static void main(String ap[]){ <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MyThread t1 = new MyThread(); <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MyThread t2 = new MyThread(); <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;t1.setName("Thread 1"); <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;t1.setPriority(5); <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;t2.setName("Thread 2"); <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;t2.setPriority(8); <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;t1.start(); <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;t2.start(); <br>
+                                        &nbsp;&nbsp;&nbsp;} <br>
+                                        &nbsp;} <br>
+                                    </code>
+                                </p>
+                            </div>
+                        </div>
+                        <!-- 11 -->
+                        <div class="ques">
+                            <div class="heading top">
+                                <h5>11. Create the program to create multiple threads, show an example of synchronization keyword.</h5>
+                                <img src="images/cross.png" alt="" class="cross" />
+                            </div>
+                            <div class="overflowedDiv">
+                                <p>
+                                    <code>
+                                        &nbsp;class Counter { <br>
+                                        &nbsp;&nbsp;&nbsp;private int count = 0; <br>
+                                        &nbsp;&nbsp;&nbsp;public synchronized void increment(){ <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;count++; <br>
+                                        &nbsp;&nbsp;&nbsp;} <br>
+                                        &nbsp;&nbsp;&nbsp;public int getCount(){ <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return count; <br>
+                                        &nbsp;&nbsp;&nbsp;} <br>
+                                        &nbsp;} <br>
+                                        &nbsp;class MyThread extends Thread { <br>
+                                        &nbsp;&nbsp;&nbsp;Counter counter; <br>
+                                        &nbsp;&nbsp;&nbsp;MyThread(Counter counter){ <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.counter = counter; <br>
+                                        &nbsp;&nbsp;&nbsp;} <br>
+                                        &nbsp;&nbsp;&nbsp;public void run(){ <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for(int i = 0; i < 1000; i++){ <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;counter.increment(); <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} <br>
+                                        &nbsp;&nbsp;&nbsp;} <br>
+                                        &nbsp;} <br>
+                                        &nbsp;public class ThreadExample { <br>
+                                        &nbsp;&nbsp;&nbsp;public static void main(String ap[]){ <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Counter counter = new Counter(); <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MyThread t1 = new MyThread(counter); <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MyThread t2 = new MyThread(counter); <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;t1.start(); <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;t2.start(); <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;try{ <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;t1.join(); <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;t2.join(); <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} catch(InterruptedException e){ <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;e.printStackTrace(); <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("Final count: " + counter.getCount()); <br>
+                                        &nbsp;&nbsp;&nbsp;} <br>
+                                        &nbsp;} <br>
+                                    </code>
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <!-- 12 -->
+                        <div class="ques">
+                            <div class="heading top">
+                                <h5>12. Create the program to create multiple threads, show an example of `notify`, `notifyAll`, `wait`, `resume`, `sleep` methods.</h5>
+                                <img src="images/cross.png" alt="" class="cross" />
+                            </div>
+                            <div class="overflowedDiv">
+                                <p>
+                                    <code>
+                                        &nbsp;class MyThread extends Thread { <br>
+                                        &nbsp;&nbsp;&nbsp;Object lock; <br>
+                                        &nbsp;&nbsp;&nbsp;MyThread(Object lock){ <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.lock = lock; <br>
+                                        &nbsp;&nbsp;&nbsp;} <br>
+                                        &nbsp;&nbsp;&nbsp;public void run(){ <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;try{ <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;synchronized(lock){ <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(Thread.currentThread().getName() + " is waiting."); <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lock.wait(); <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(Thread.currentThread().getName() + " resumed."); <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} catch(InterruptedException e){ <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;e.printStackTrace(); <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} <br>
+                                        &nbsp;&nbsp;&nbsp;} <br>
+                                        &nbsp;} <br>
+                                        &nbsp;public class ThreadExample { <br>
+                                        &nbsp;&nbsp;&nbsp;public static void main(String ap[]){ <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Object lock = new Object(); <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MyThread t1 = new MyThread(lock); <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MyThread t2 = new MyThread(lock); <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;t1.start(); <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;t2.start(); <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;try{ <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Thread.sleep(2000); <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} catch(InterruptedException e){ <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;e.printStackTrace(); <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;synchronized(lock){ <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lock.notify(); <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} <br>
+                                        &nbsp;&nbsp;&nbsp;} <br>
+                                        &nbsp;} <br>
+                                    </code>
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <!-- 13 -->
+                        <div class="ques">
+                            <div class="heading top">
+                                <h5>13. Create the program to create multiple threads, show an example of `join` and `yield` methods.</h5>
+                                <img src="images/cross.png" alt="" class="cross" />
+                            </div>
+                            <div class="overflowedDiv">
+                                <p>
+                                    <code>
+                                        &nbsp;class MyThread extends Thread { <br>
+                                        &nbsp;&nbsp;&nbsp;public void run(){ <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(Thread.currentThread().getName() + " started."); <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Thread.yield(); <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(Thread.currentThread().getName() + " finished."); <br>
+                                        &nbsp;&nbsp;&nbsp;} <br>
+                                        &nbsp;} <br>
+                                        &nbsp;public class ThreadExample { <br>
+                                        &nbsp;&nbsp;&nbsp;public static void main(String ap[]){ <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MyThread t1 = new MyThread(); <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MyThread t2 = new MyThread(); <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;t1.start(); <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;t2.start(); <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;try{ <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;t1.join(); <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;t2.join(); <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} catch(InterruptedException e){ <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;e.printStackTrace(); <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} <br>
+                                        &nbsp;&nbsp;&nbsp;} <br>
+                                        &nbsp;} <br>
+                                    </code>
+                                </p>
+                            </div>
+                        </div>
+                        
+                        
+
+                    </div>
+                </div>
+            </div>
+                   
+        </div> 
+          
+    </div>
+
+    </main>
+<script src="/script.js"></script>
+</body>
+</html>
+
+

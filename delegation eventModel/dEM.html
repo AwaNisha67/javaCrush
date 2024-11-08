@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Bootstarp-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>CodeCrush</title>
+    <link rel="stylesheet" href="/eg.css">
+</head>
+<body>
+   
+    <main>
+
+         <nav class="container">
+            <div class="logoDiv">
+                <img class="logo"  alt="Logo" src="/images/clogo1.png"/>
+            </div>
+            <div class="list-items-div">
+                <ul class="lits-items-container">
+                    <li class="list-items"><a href="/index.html">main</a></li>
+                    <li class="list-items"><a href="/index.html">about</a></li>
+                    <li class="list-items"><a href="/practice.html">practice</a></li>
+                </ul>
+            </div>
+            <div class="search">
+                <!-- logo -->
+                <i class="bi bi-search"></i>
+            </div>
+        </nav> 
+
+    <div class="background-images">
+        <!-- <img  class="images" src="./images/dots.276a62aa.svg" alt="dotted background"> -->
+       <!-- <img style="top: -40px;" class="images" src="./images/bgblur.19fa1f96.svg" alt="graySparkle"> -->
+        <!-- <img src="./images/hammer.a618d04a.svg" alt="hammer" class="hammer"> -->
+        <img src="./images/spanner.3acd9d9d.svg" alt="spanner" class="spanner">
+    </div>
+
+   
+    <div class="table-super-div">
+        <div class="table-sub-div">
+            <div class="left-table-content">
+                <div class="left-table-paragraph-text">
+                    <p>Java Topics</p>
+                </div>
+                <a class="java-topics activeTopic" href="/delegation eventModel/dEM.html">Delegation Event model</a>
+                <a class="java-topics " href="/arrays/solArrq1.html">Arrays</a>
+                <a class="java-topics" href="/2dArray/2dArray.html">2d-Arrays</a>
+                <a class="java-topics" href="/Strings/strings.html">Strings</a>
+                <a class="java-topics" href="/inheritence/inhert1.html">Inheritence</a>
+                <a class="java-topics" href="/interfaces/interfaces.html">Interfaces</a>
+                <a class="java-topics" href="/package/package.html">Packages</a>
+                <a class="java-topics" href="/exception handling/exceptions.html">Exception-Handling</a>
+                <a class="java-topics" href="/inputOutput/io.html">Input/Output</a>
+                <a class="java-topics" href="/jdbc/jdbc.html">JDBC</a>
+                <a class="java-topics" href="/awt/awt.html" >AWT</a>
+                <a class="java-topics" href="/data conversion/dc1.html">Data Conversion</a>
+                <a class="java-topics" href="/multithreading/multithreading.html">Multithreading</a>
+                <a style="display: none;" class="java-topics" href="/basics construct/basicConstruct.html" >Basic Construct</a>
+           </div>
+             <div class="right-table-content">
+                <div class="right-table-paragraph-text">
+                    <p>Delegation Event Model-Questions</p> 
+                </div>
+                <div class="inheritQuest">
+                    <div class="questionContainer">
+
+<!-- awt -->
+ <!-- question1 -->
+                        <div class="ques">
+                            <div class="heading top">
+                                <h5>Heading</h5>
+                                <img src="images/cross.png" alt="" class="cross" />
+                            </div>
+                            <div class="overflowedDiv">
+                                <p>
+                                    <code>
+                                       &nbsp;import java.awt.*; <br>
+                                        &nbsp;import java.awt.event.*; <br>
+                                        &nbsp;&nbsp;class myFrame extends Frame{ <br>
+                                            &nbsp;&nbsp;&nbsp;Button b1 = new Button(); <br>
+                                            &nbsp;&nbsp;&nbsp;TextField tf1 = new TextField(); <br>
+                                            &nbsp;&nbsp;&nbsp;myFrame(){ <br>
+                                                &nbsp;&nbsp;&nbsp;add(tf1); <br>
+                                                &nbsp;&nbsp;&nbsp;add(b1); <br>
+                                                &nbsp;&nbsp;&nbsp;setBounds(10,20,500,500); <br>
+                                                &nbsp;&nbsp;&nbsp;setTitle("MyFrame"); <br>
+                                                &nbsp;&nbsp;&nbsp;setVisible(true); <br>
+                                                &nbsp;&nbsp;&nbsp;setLayout(new FlowLayout()); <br>
+                                                &nbsp;&nbsp;&nbsp;b1.setLabel("Submit"); <br>
+                                                &nbsp;&nbsp;&nbsp;tf1.setText("hellp"); <br>
+                                                &nbsp;&nbsp;&nbsp;tf1.addKeyListener(new KeyAdapter(){ <br>
+                                                    
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;public void keyTyped(java.awt.event.KeyEvent e){ <br>
+                                                        
+                                                        
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;}); <br>
+                                                    
+                                                    
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;b1.addMouseListener(new MouseAdapter() { <br>
+                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;public void mouseClicked(java.awt.event.MouseEvent e){ <br>
+                                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(tf1.getText()); <br>
+                                                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}     <br>
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} <br>
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;); <br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} <br>
+                                                
+                                                
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} <br>
+                                            
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;class awt { <br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;public static void main(String ap[]){ <br>
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;myFrame f1 = new myFrame(); <br>
+                                                    
+                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} <br>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} <br>
+                                            
+                                    </code>
+                                </p>
+                            </div>
+                        </div>
+                        
+
+                        <div class="ques">
+                            <div class="heading top">
+                                <h5>1. Java Program to Display Some Text in the Frame using Labels</h5>
+                                <img src="images/cross.png" alt="" class="cross" />
+                            </div>
+                            <div class="overflowedDiv">
+                                <p>
+                                    <code>
+                                        import java.awt.*;<br>
+                                        import java.awt.event.*;<br><br>
+                                        class myFrame extends Frame {<br>
+                                            Label label = new Label("Hello, Welcome to Java AWT!");<br>
+                                            myFrame() {<br>
+                                                add(label);<br>
+                                                setLayout(new FlowLayout());<br>
+                                                setSize(300, 100);<br>
+                                                setTitle("Display Text in Frame");<br>
+                                                setVisible(true);<br>
+                                            }<br>
+                                            public static void main(String ap[]) {<br>
+                                                myFrame f1 = new myFrame();<br>
+                                            }<br>
+                                        }<br>
+                                    </code>
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="ques">
+                            <div class="heading top">
+                                <h5>2. Java Program to Create Text Area and Password Field</h5>
+                                <img src="images/cross.png" alt="" class="cross" />
+                            </div>
+                            <div class="overflowedDiv">
+                                <p>
+                                    <code>
+                                        import java.awt.*;<br>
+                                        import java.awt.event.*;<br><br>
+                                        class myFrame extends Frame {<br>
+                                            TextArea textArea = new TextArea("Enter text here...");<br>
+                                            TextField passwordField = new TextField("password", 20);<br>
+                                            myFrame() {<br>
+                                                add(textArea);<br>
+                                                add(passwordField);<br>
+                                                setLayout(new FlowLayout());<br>
+                                                setSize(400, 200);<br>
+                                                setTitle("Text Area and Password Field");<br>
+                                                setVisible(true);<br>
+                                            }<br>
+                                            public static void main(String ap[]) {<br>
+                                                myFrame f1 = new myFrame();<br>
+                                            }<br>
+                                        }<br>
+                                    </code>
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="ques">
+                            <div class="heading top">
+                                <h5>3. Java Program to Create a Button and Display Image in the Frame when Clicked</h5>
+                                <img src="images/cross.png" alt="" class="cross" />
+                            </div>
+                            <div class="overflowedDiv">
+                                <p>
+                                    <code>
+                                        import java.awt.*;<br>
+                                        import java.awt.event.*;<br><br>
+                                        class myFrame extends Frame {<br>
+                                            Button b1 = new Button("Click to show image");<br>
+                                            Image img;<br>
+                                            myFrame() {<br>
+                                                b1.addActionListener(new ActionListener() {<br>
+                                                    public void actionPerformed(ActionEvent e) {<br>
+                                                        img = Toolkit.getDefaultToolkit().getImage("path/to/image.jpg");<br>
+                                                        repaint();<br>
+                                                    }<br>
+                                                });<br>
+                                                add(b1);<br>
+                                                setLayout(new FlowLayout());<br>
+                                                setSize(500, 500);<br>
+                                                setTitle("Display Image on Button Click");<br>
+                                                setVisible(true);<br>
+                                            }<br>
+                                            public void paint(Graphics g) {<br>
+                                                if (img != null) {<br>
+                                                    g.drawImage(img, 50, 50, this);<br>
+                                                }<br>
+                                            }<br>
+                                            public static void main(String ap[]) {<br>
+                                                myFrame f1 = new myFrame();<br>
+                                            }<br>
+                                        }<br>
+                                    </code>
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="ques">
+                            <div class="heading top">
+                                <h5>4. Java Program to Create 2 Radio Buttons and Display Selected Button Label</h5>
+                                <img src="images/cross.png" alt="" class="cross" />
+                            </div>
+                            <div class="overflowedDiv">
+                                <p>
+                                    <code>
+                                        import java.awt.*;<br>
+                                        import java.awt.event.*;<br><br>
+                                        class myFrame extends Frame {<br>
+                                            CheckboxGroup group = new CheckboxGroup();<br>
+                                            Checkbox radioButton1 = new Checkbox("Option 1", group, false);<br>
+                                            Checkbox radioButton2 = new Checkbox("Option 2", group, false);<br>
+                                            Label label = new Label("Selected Option: ");<br>
+                                            myFrame() {<br>
+                                                radioButton1.addItemListener(new ItemListener() {<br>
+                                                    public void itemStateChanged(ItemEvent e) {<br>
+                                                        label.setText("Selected Option: " + radioButton1.getLabel());<br>
+                                                    }<br>
+                                                });<br>
+                                                radioButton2.addItemListener(new ItemListener() {<br>
+                                                    public void itemStateChanged(ItemEvent e) {<br>
+                                                        label.setText("Selected Option: " + radioButton2.getLabel());<br>
+                                                    }<br>
+                                                });<br>
+                                                add(radioButton1);<br>
+                                                add(radioButton2);<br>
+                                                add(label);<br>
+                                                setLayout(new FlowLayout());<br>
+                                                setSize(300, 200);<br>
+                                                setTitle("Radio Buttons");<br>
+                                                setVisible(true);<br>
+                                            }<br>
+                                            public static void main(String ap[]) {<br>
+                                                myFrame f1 = new myFrame();<br>
+                                            }<br>
+                                        }<br>
+                                    </code>
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="ques">
+                            <div class="heading top">
+                                <h5>5. Java Program to Handle KeyBoardEvent</h5>
+                                <img src="images/cross.png" alt="" class="cross" />
+                            </div>
+                            <div class="overflowedDiv">
+                                <p>
+                                    <code>
+                                        import java.awt.*;<br>
+                                        import java.awt.event.*;<br><br>
+                                        class myFrame extends Frame {<br>
+                                            TextField tf1 = new TextField();<br>
+                                            myFrame() {<br>
+                                                tf1.addKeyListener(new KeyAdapter() {<br>
+                                                    public void keyTyped(KeyEvent e) {<br>
+                                                        char c = e.getKeyChar();<br>
+                                                        System.out.println("Key Typed: " + c);<br>
+                                                    }<br>
+                                                });<br>
+                                                add(tf1);<br>
+                                                setLayout(new FlowLayout());<br>
+                                                setSize(300, 100);<br>
+                                                setTitle("KeyBoardEvent");<br>
+                                                setVisible(true);<br>
+                                            }<br>
+                                            public static void main(String ap[]) {<br>
+                                                myFrame f1 = new myFrame();<br>
+                                            }<br>
+                                        }<br>
+                                    </code>
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="ques">
+                            <div class="heading top">
+                                <h5>6. Java Program to Handle MouseEvent</h5>
+                                <img src="images/cross.png" alt="" class="cross" />
+                            </div>
+                            <div class="overflowedDiv">
+                                <p>
+                                    <code>
+                                        import java.awt.*;<br>
+                                        import java.awt.event.*;<br><br>
+                                        class myFrame extends Frame {<br>
+                                            myFrame() {<br>
+                                                addMouseListener(new MouseAdapter() {<br>
+                                                    public void mouseClicked(MouseEvent e) {<br>
+                                                        System.out.println("Mouse clicked at: " + e.getX() + ", " + e.getY());<br>
+                                                    }<br>
+                                                });<br>
+                                                setLayout(new FlowLayout());<br>
+                                                setSize(300, 200);<br>
+                                                setTitle("MouseEvent");<br>
+                                                setVisible(true);<br>
+                                            }<br>
+                                            public static void main(String ap[]) {<br>
+                                                myFrame f1 = new myFrame();<br>
+                                            }<br>
+                                        }<br>
+                                    </code>
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="ques">
+                            <div class="heading top">
+                                <h5>7. Java Program to Get and Set State and Get Label of a Check Box</h5>
+                                <img src="images/cross.png" alt="" class="cross" />
+                            </div>
+                            <div class="overflowedDiv">
+                                <p>
+                                    <code>
+                                       &nbsp;import java.awt.*; <br>
+                                       &nbsp;import java.awt.event.*; <br>
+                                       &nbsp;class CheckBoxExample extends Frame { <br>
+                                           &nbsp;&nbsp;&nbsp;Checkbox checkbox = new Checkbox("Accept Terms"); <br>
+                                           &nbsp;&nbsp;&nbsp;Button btn = new Button("Check Status"); <br>
+                                           &nbsp;&nbsp;&nbsp;CheckBoxExample(){ <br>
+                                               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;add(checkbox); <br>
+                                               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;add(btn); <br>
+                                               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;setLayout(new FlowLayout()); <br>
+                                               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;setSize(300,200); <br>
+                                               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;setVisible(true); <br>
+                                               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;btn.addActionListener(new ActionListener(){ <br>
+                                                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;public void actionPerformed(ActionEvent e){ <br>
+                                                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("Checked: " + checkbox.getState()); <br>
+                                                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("Label: " + checkbox.getLabel()); <br>
+                                                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} <br>
+                                               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}); <br>
+                                           &nbsp;&nbsp;&nbsp;} <br>
+                                           &nbsp;&nbsp;&nbsp;public static void main(String ap[]){ <br>
+                                               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;new CheckBoxExample(); <br>
+                                           &nbsp;&nbsp;&nbsp;} <br>
+                                       &nbsp;&nbsp;&nbsp;} <br>
+                                    </code>
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="ques">
+                            <div class="heading top">
+                                <h5>8. Java Program to Create Check Boxes and Radio Buttons</h5>
+                                <img src="images/cross.png" alt="" class="cross" />
+                            </div>
+                            <div class="overflowedDiv">
+                                <p>
+                                    <code>
+                                       &nbsp;import java.awt.*; <br>
+                                       &nbsp;import java.awt.event.*; <br>
+                                       &nbsp;class CheckBoxRadioButtonExample extends Frame { <br>
+                                           &nbsp;&nbsp;&nbsp;Checkbox checkbox1 = new Checkbox("Option 1"); <br>
+                                           &nbsp;&nbsp;&nbsp;Checkbox checkbox2 = new Checkbox("Option 2"); <br>
+                                           &nbsp;&nbsp;&nbsp;CheckboxGroup group = new CheckboxGroup(); <br>
+                                           &nbsp;&nbsp;&nbsp;Checkbox radio1 = new Checkbox("Radio 1", group, false); <br>
+                                           &nbsp;&nbsp;&nbsp;Checkbox radio2 = new Checkbox("Radio 2", group, false); <br>
+                                           &nbsp;&nbsp;&nbsp;Button btn = new Button("Submit"); <br>
+                                           &nbsp;&nbsp;&nbsp;CheckBoxRadioButtonExample(){ <br>
+                                               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;add(checkbox1); <br>
+                                               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;add(checkbox2); <br>
+                                               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;add(radio1); <br>
+                                               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;add(radio2); <br>
+                                               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;add(btn); <br>
+                                               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;setLayout(new FlowLayout()); <br>
+                                               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;setSize(400,200); <br>
+                                               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;setVisible(true); <br>
+                                               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;btn.addActionListener(new ActionListener(){ <br>
+                                                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;public void actionPerformed(ActionEvent e){ <br>
+                                                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("Checkbox1: " + checkbox1.getState()); <br>
+                                                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("Checkbox2: " + checkbox2.getState()); <br>
+                                                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("Selected Radio: " + group.getSelectedCheckbox().getLabel()); <br>
+                                                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} <br>
+                                               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}); <br>
+                                           &nbsp;&nbsp;&nbsp;} <br>
+                                           &nbsp;&nbsp;&nbsp;public static void main(String ap[]){ <br>
+                                               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;new CheckBoxRadioButtonExample(); <br>
+                                           &nbsp;&nbsp;&nbsp;} <br>
+                                       &nbsp;&nbsp;&nbsp;} <br>
+                                    </code>
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="ques">
+                            <div class="heading top">
+                                <h5>9. Java Program to Create and Switch between Frames using Buttons</h5>
+                                <img src="images/cross.png" alt="" class="cross" />
+                            </div>
+                            <div class="overflowedDiv">
+                                <p>
+                                    <code>
+                                       &nbsp;import java.awt.*; <br>
+                                       &nbsp;import java.awt.event.*; <br>
+                                       &nbsp;class FrameSwitcher extends Frame { <br>
+                                           &nbsp;&nbsp;&nbsp;Button btn1 = new Button("Go to Frame 2"); <br>
+                                           &nbsp;&nbsp;&nbsp;FrameSwitcher(){ <br>
+                                               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;add(btn1); <br>
+                                               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;setLayout(new FlowLayout()); <br>
+                                               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;setSize(300,200); <br>
+                                               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;setVisible(true); <br>
+                                               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;btn1.addActionListener(new ActionListener(){ <br>
+                                                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;public void actionPerformed(ActionEvent e){ <br>
+                                                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;new SecondFrame(); <br>
+                                                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dispose(); <br>
+                                                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} <br>
+                                               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}); <br>
+                                           &nbsp;&nbsp;&nbsp;} <br>
+                                           &nbsp;&nbsp;&nbsp;public static void main(String ap[]){ <br>
+                                               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;new FrameSwitcher(); <br>
+                                           &nbsp;&nbsp;&nbsp;} <br>
+                                       &nbsp;&nbsp;&nbsp;} <br>
+                                       &nbsp;class SecondFrame extends Frame { <br>
+                                           &nbsp;&nbsp;&nbsp;Button btn2 = new Button("Back to Frame 1"); <br>
+                                           &nbsp;&nbsp;&nbsp;SecondFrame(){ <br>
+                                               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;add(btn2); <br>
+                                               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;setLayout(new FlowLayout()); <br>
+                                               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;setSize(300,200); <br>
+                                               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;setVisible(true); <br>
+                                               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;btn2.addActionListener(new ActionListener(){ <br>
+                                                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;public void actionPerformed(ActionEvent e){ <br>
+                                                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;new FrameSwitcher(); <br>
+                                                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dispose(); <br>
+                                                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} <br>
+                                               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}); <br>
+                                           &nbsp;&nbsp;&nbsp;} <br>
+                                       &nbsp;&nbsp;&nbsp;} <br>
+                                    </code>
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="ques">
+                            <div class="heading top">
+                                <h5>10. Java Program to Create and Set Border to Push Buttons</h5>
+                                <img src="images/cross.png" alt="" class="cross" />
+                            </div>
+                            <div class="overflowedDiv">
+                                <p>
+                                    <code>
+                                       &nbsp;import java.awt.*; <br>
+                                       &nbsp;import java.awt.event.*; <br>
+                                       &nbsp;class ButtonWithBorder extends Frame { <br>
+                                           &nbsp;&nbsp;&nbsp;Button btn = new Button("Click Me"); <br>
+                                           &nbsp;&nbsp;&nbsp;ButtonWithBorder(){ <br>
+                                               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;btn.setBounds(50, 50, 100, 30); <br>
+                                               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;btn.setBackground(Color.YELLOW); <br>
+                                               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;btn.setForeground(Color.BLUE); <br>
+                                               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;btn.setFont(new Font("Arial", Font.BOLD, 14)); <br>
+                                               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;setSize(300,200); <br>
+                                               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;setVisible(true); <br>
+                                               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;add(btn); <br>
+                                               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;setLayout(null); <br>
+                                           &nbsp;&nbsp;&nbsp;} <br>
+                                           &nbsp;&nbsp;&nbsp;public static void main(String ap[]){ <br>
+                                               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;new ButtonWithBorder(); <br>
+                                           &nbsp;&nbsp;&nbsp;} <br>
+                                       &nbsp;&nbsp;&nbsp;} <br>
+                                    </code>
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="ques">
+                            <div class="heading top">
+                                <h5>11. Java Program to Create a List Box to Select Multiple Items and Display it in the Frame</h5>
+                                <img src="images/cross.png" alt="" class="cross" />
+                            </div>
+                            <div class="overflowedDiv">
+                                <p>
+                                    <code>
+                                       &nbsp;import java.awt.*; <br>
+                                       &nbsp;import java.awt.event.*; <br>
+                                       &nbsp;class ListBoxExample extends Frame { <br>
+                                           &nbsp;&nbsp;&nbsp;List list = new List(); <br>
+                                           &nbsp;&nbsp;&nbsp;Button btn = new Button("Show Selected Items"); <br>
+                                           &nbsp;&nbsp;&nbsp;ListBoxExample(){ <br>
+                                               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;list.add("Item 1"); <br>
+                                               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;list.add("Item 2"); <br>
+                                               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;list.add("Item 3"); <br>
+                                               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;list.add("Item 4"); <br>
+                                               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;list.setMultipleMode(true); <br>
+                                               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;add(list); <br>
+                                               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;add(btn); <br>
+                                               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;setLayout(new FlowLayout()); <br>
+                                               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;setSize(400,300); <br>
+                                               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;setVisible(true); <br>
+                                               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;btn.addActionListener(new ActionListener(){ <br>
+                                                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;public void actionPerformed(ActionEvent e){ <br>
+                                                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;String[] selectedItems = list.getSelectedItems(); <br>
+                                                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for(String item : selectedItems){ <br>
+                                                           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(item); <br>
+                                                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} <br>
+                                                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} <br>
+                                               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}); <br>
+                                           &nbsp;&nbsp;&nbsp;} <br>
+                                           &nbsp;&nbsp;&nbsp;public static void main(String ap[]){ <br>
+                                               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;new ListBoxExample(); <br>
+                                           &nbsp;&nbsp;&nbsp;} <br>
+                                       &nbsp;&nbsp;&nbsp;} <br>
+                                    </code>
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="ques">
+                            <div class="heading top">
+                                <h5>12. Java Program to Display a Message in a New Frame</h5>
+                                <img src="images/cross.png" alt="" class="cross" />
+                            </div>
+                            <div class="overflowedDiv">
+                                <p>
+                                    <code>
+                                       &nbsp;import java.awt.*; <br>
+                                       &nbsp;import java.awt.event.*; <br>
+                                       &nbsp;class DisplayMessage extends Frame { <br>
+                                           &nbsp;&nbsp;&nbsp;Button btn = new Button("Show Message"); <br>
+                                           &nbsp;&nbsp;&nbsp;DisplayMessage(){ <br>
+                                               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;add(btn); <br>
+                                               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;setLayout(new FlowLayout()); <br>
+                                               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;setSize(300,200); <br>
+                                               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;setVisible(true); <br>
+                                               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;btn.addActionListener(new ActionListener(){ <br>
+                                                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;public void actionPerformed(ActionEvent e){ <br>
+                                                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Frame messageFrame = new Frame(); <br>
+                                                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Label label = new Label("Hello, Welcome to the new Frame!"); <br>
+                                                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;messageFrame.add(label); <br>
+                                                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;messageFrame.setSize(400,200); <br>
+                                                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;messageFrame.setVisible(true); <br>
+                                                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} <br>
+                                               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}); <br>
+                                           &nbsp;&nbsp;&nbsp;} <br>
+                                           &nbsp;&nbsp;&nbsp;public static void main(String ap[]){ <br>
+                                               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;new DisplayMessage(); <br>
+                                           &nbsp;&nbsp;&nbsp;} <br>
+                                       &nbsp;&nbsp;&nbsp;} <br>
+                                    </code>
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="ques">
+                            <div class="heading top">
+                                <h5>13. Java Program to Close the Frame using WindowAdapter Class</h5>
+                                <img src="images/cross.png" alt="" class="cross" />
+                            </div>
+                            <div class="overflowedDiv">
+                                <p>
+                                    <code>
+                                       &nbsp;import java.awt.*; <br>
+                                       &nbsp;import java.awt.event.*; <br>
+                                       &nbsp;class CloseFrameExample extends Frame { <br>
+                                           &nbsp;&nbsp;&nbsp;CloseFrameExample(){ <br>
+                                               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;setSize(400,200); <br>
+                                               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;setVisible(true); <br>
+                                               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;addWindowListener(new WindowAdapter(){ <br>
+                                                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;public void windowClosing(WindowEvent we){ <br>
+                                                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.exit(0); <br>
+                                                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} <br>
+                                               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}); <br>
+                                           &nbsp;&nbsp;&nbsp;} <br>
+                                           &nbsp;&nbsp;&nbsp;public static void main(String ap[]){ <br>
+                                               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;new CloseFrameExample(); <br>
+                                           &nbsp;&nbsp;&nbsp;} <br>
+                                       &nbsp;&nbsp;&nbsp;} <br>
+                                    </code>
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="ques">
+                            <div class="heading top">
+                                <h5>14. Java Program to Check Which Fonts are Available in a Local System</h5>
+                                <img src="images/cross.png" alt="" class="cross" />
+                            </div>
+                            <div class="overflowedDiv">
+                                <p>
+                                    <code>
+                                       &nbsp;import java.awt.*; <br>
+                                       &nbsp;import java.util.*; <br>
+                                       &nbsp;class AvailableFonts extends Frame { <br>
+                                           &nbsp;&nbsp;&nbsp;AvailableFonts(){ <br>
+                                               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;String[] fonts = GraphicsEnvironment.getLocalGraphicsEnvironment().getAvailableFontFamilyNames(); <br>
+                                               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;setLayout(new FlowLayout()); <br>
+                                               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;setSize(400,300); <br>
+                                               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;setVisible(true); <br>
+                                               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for(String font : fonts){ <br>
+                                                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Label label = new Label(font); <br>
+                                                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;add(label); <br>
+                                               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} <br>
+                                           &nbsp;&nbsp;&nbsp;} <br>
+                                           &nbsp;&nbsp;&nbsp;public static void main(String ap[]){ <br>
+                                               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;new AvailableFonts(); <br>
+                                           &nbsp;&nbsp;&nbsp;} <br>
+                                       &nbsp;&nbsp;&nbsp;} <br>
+                                    </code>
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="ques">
+                            <div class="heading top">
+                                <h5>15. Java Program to Display Text in Different Fonts</h5>
+                                <img src="images/cross.png" alt="" class="cross" />
+                            </div>
+                            <div class="overflowedDiv">
+                                <p>
+                                    <code>
+                                       &nbsp;import java.awt.*; <br>
+                                       &nbsp;import java.awt.event.*; <br>
+                                       &nbsp;class DisplayDifferentFonts extends Frame { <br>
+                                           &nbsp;&nbsp;&nbsp;Label label1 = new Label("Arial Font"); <br>
+                                           &nbsp;&nbsp;&nbsp;Label label2 = new Label("Courier New Font"); <br>
+                                           &nbsp;&nbsp;&nbsp;Label label3 = new Label("Times New Roman Font"); <br>
+                                           &nbsp;&nbsp;&nbsp;DisplayDifferentFonts(){ <br>
+                                               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;label1.setFont(new Font("Arial", Font.PLAIN, 20)); <br>
+                                               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;label2.setFont(new Font("Courier New", Font.BOLD, 20)); <br>
+                                               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;label3.setFont(new Font("Times New Roman", Font.ITALIC, 20)); <br>
+                                               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;add(label1); <br>
+                                               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;add(label2); <br>
+                                               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;add(label3); <br>
+                                               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;setLayout(new FlowLayout()); <br>
+                                               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;setSize(400,300); <br>
+                                               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;setVisible(true); <br>
+                                           &nbsp;&nbsp;&nbsp;} <br>
+                                           &nbsp;&nbsp;&nbsp;public static void main(String ap[]){ <br>
+                                               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;new DisplayDifferentFonts(); <br>
+                                           &nbsp;&nbsp;&nbsp;} <br>
+                                       &nbsp;&nbsp;&nbsp;} <br>
+                                    </code>
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="ques">
+                            <div class="heading top">
+                                <h5>16. Java Program to Change Frame Background Color as Cyan</h5>
+                                <img src="images/cross.png" alt="" class="cross" />
+                            </div>
+                            <div class="overflowedDiv">
+                                <p>
+                                    <code>
+                                       &nbsp;import java.awt.*; <br>
+                                       &nbsp;import java.awt.event.*; <br>
+                                       &nbsp;class ChangeBackgroundColor extends Frame { <br>
+                                           &nbsp;&nbsp;&nbsp;ChangeBackgroundColor(){ <br>
+                                               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;setBackground(Color.CYAN); <br>
+                                               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;setSize(400,300); <br>
+                                               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;setVisible(true); <br>
+                                           &nbsp;&nbsp;&nbsp;} <br>
+                                           &nbsp;&nbsp;&nbsp;public static void main(String ap[]){ <br>
+                                               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;new ChangeBackgroundColor(); <br>
+                                           &nbsp;&nbsp;&nbsp;} <br>
+                                       &nbsp;&nbsp;&nbsp;} <br>
+                                    </code>
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="ques">
+                            <div class="heading top">
+                                <h5>17. Java Program to Change the Applet Background Colour when Button Clicked</h5>
+                                <img src="images/cross.png" alt="" class="cross" />
+                            </div>
+                            <div class="overflowedDiv">
+                                <p>
+                                    <code>
+                                       &nbsp;import java.awt.*; <br>
+                                       &nbsp;import java.awt.event.*; <br>
+                                       &nbsp;class AppletBackgroundColor extends Frame { <br>
+                                           &nbsp;&nbsp;&nbsp;Button btn = new Button("Change Background Color"); <br>
+                                           &nbsp;&nbsp;&nbsp;AppletBackgroundColor(){ <br>
+                                               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;add(btn); <br>
+                                               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;setSize(400,300); <br>
+                                               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;setVisible(true); <br>
+                                               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;btn.addActionListener(new ActionListener(){ <br>
+                                                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;public void actionPerformed(ActionEvent e){ <br>
+                                                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;setBackground(Color.YELLOW); <br>
+                                                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} <br>
+                                               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}); <br>
+                                           &nbsp;&nbsp;&nbsp;} <br>
+                                           &nbsp;&nbsp;&nbsp;public static void main(String ap[]){ <br>
+                                               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;new AppletBackgroundColor(); <br>
+                                           &nbsp;&nbsp;&nbsp;} <br>
+                                       &nbsp;&nbsp;&nbsp;} <br>
+                                    </code>
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="ques">
+                            <div class="heading top">
+                                <h5>18. Java Program to Display Several Dots on the Screen Continuously</h5>
+                                <img src="images/cross.png" alt="" class="cross" />
+                            </div>
+                            <div class="overflowedDiv">
+                                <p>
+                                    <code>
+                                       &nbsp;import java.awt.*; <br>
+                                       &nbsp;import java.awt.event.*; <br>
+                                       &nbsp;class DotsExample extends Frame { <br>
+                                           &nbsp;&nbsp;&nbsp;Graphics g; <br>
+                                           &nbsp;&nbsp;&nbsp;DotsExample(){ <br>
+                                               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;setSize(500,500); <br>
+                                               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;setVisible(true); <br>
+                                               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;addWindowListener(new WindowAdapter(){ <br>
+                                                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;public void windowClosing(WindowEvent we){ <br>
+                                                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.exit(0); <br>
+                                                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} <br>
+                                               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}); <br>
+                                           &nbsp;&nbsp;&nbsp;} <br>
+                                           &nbsp;&nbsp;&nbsp;public void paint(Graphics g){ <br>
+                                               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;g.setColor(Color.RED); <br>
+                                               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for(int i = 0; i < 500; i+=20){ <br>
+                                                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;g.fillOval(i, i, 5, 5); <br>
+                                               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} <br>
+                                           &nbsp;&nbsp;&nbsp;} <br>
+                                           &nbsp;&nbsp;&nbsp;public static void main(String ap[]){ <br>
+                                               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;new DotsExample(); <br>
+                                           &nbsp;&nbsp;&nbsp;} <br>
+                                       &nbsp;&nbsp;&nbsp;} <br>
+                                    </code>
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="ques">
+                            <div class="heading top">
+                                <h5>19. Java Program to Validate the TextField for only entering numbers using KeyListener</h5>
+                                <img src="images/cross.png" alt="" class="cross" />
+                            </div>
+                            <div class="overflowedDiv">
+                                <p>
+                                    <code>
+                                       &nbsp;import java.awt.*; <br>
+                                       &nbsp;import java.awt.event.*; <br>
+                                       &nbsp;class NumberValidator extends Frame { <br>
+                                           &nbsp;&nbsp;&nbsp;TextField tf = new TextField(); <br>
+                                           &nbsp;&nbsp;&nbsp;NumberValidator(){ <br>
+                                               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;add(tf); <br>
+                                               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;setSize(300,200); <br>
+                                               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;setVisible(true); <br>
+                                               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tf.addKeyListener(new KeyAdapter(){ <br>
+                                                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;public void keyTyped(KeyEvent ke){ <br>
+                                                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(!Character.isDigit(ke.getKeyChar())){ <br>
+                                                           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ke.consume(); <br>
+                                                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} <br>
+                                                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} <br>
+                                               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}); <br>
+                                           &nbsp;&nbsp;&nbsp;} <br>
+                                           &nbsp;&nbsp;&nbsp;public static void main(String ap[]){ <br>
+                                               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;new NumberValidator(); <br>
+                                           &nbsp;&nbsp;&nbsp;} <br>
+                                       &nbsp;&nbsp;&nbsp;} <br>
+                                    </code>
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="ques">
+                            <div class="heading top">
+                                <h5>20. Java Program to Validate the TextField for only entering email id using KeyAdapter</h5>
+                                <img src="images/cross.png" alt="" class="cross" />
+                            </div>
+                            <div class="overflowedDiv">
+                                <p>
+                                    <code>
+                                       &nbsp;import java.awt.*; <br>
+                                       &nbsp;import java.awt.event.*; <br>
+                                       &nbsp;import java.util.regex.*; <br>
+                                       &nbsp;class EmailValidator extends Frame { <br>
+                                           &nbsp;&nbsp;&nbsp;TextField tf = new TextField(); <br>
+                                           &nbsp;&nbsp;&nbsp;EmailValidator(){ <br>
+                                               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;add(tf); <br>
+                                               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;setSize(300,200); <br>
+                                               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;setVisible(true); <br>
+                                               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tf.addKeyListener(new KeyAdapter(){ <br>
+                                                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;public void keyTyped(KeyEvent ke){ <br>
+                                                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;String text = tf.getText(); <br>
+                                                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(!text.matches("[a-zA-Z0-9@.]*")){ <br>
+                                                           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ke.consume(); <br>
+                                                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} <br>
+                                                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} <br>
+                                               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}); <br>
+                                           &nbsp;&nbsp;&nbsp;} <br>
+                                           &nbsp;&nbsp;&nbsp;public static void main(String ap[]){ <br>
+                                               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;new EmailValidator(); <br>
+                                           &nbsp;&nbsp;&nbsp;} <br>
+                                       &nbsp;&nbsp;&nbsp;} <br>
+                                    </code>
+                                </p>
+                            </div>
+                        </div>
+                                                
+                        
+                    
+                    </div>
+                </div>
+            </div>
+                   
+        </div> 
+          
+    </div>
+
+    </main>
+<script src="/script.js"></script>
+</body>
+</html>
+
+

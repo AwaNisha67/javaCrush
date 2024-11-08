@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Bootstarp-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>CodeCrush</title>
+    <link rel="stylesheet" href="/eg.css">
+</head>
+<body>
+   
+    <main>
+
+         <nav class="container">
+            <div class="logoDiv">
+                <img class="logo"  alt="Logo" src="/images/clogo1.png"/>
+            </div>
+            <div class="list-items-div">
+                <ul class="lits-items-container">
+                    <li class="list-items"><a href="/index.html">main</a></li>
+                    <li class="list-items"><a href="/index.html">about</a></li>
+                    <li class="list-items"><a href="/practice.html">practice</a></li>
+                </ul>
+            </div>
+            <div class="search">
+                <!-- logo -->
+                <i class="bi bi-search"></i>
+            </div>
+        </nav> 
+
+    <div class="background-images">
+        <!-- <img  class="images" src="./images/dots.276a62aa.svg" alt="dotted background"> -->
+       <!-- <img style="top: -40px;" class="images" src="./images/bgblur.19fa1f96.svg" alt="graySparkle"> -->
+        <!-- <img src="./images/hammer.a618d04a.svg" alt="hammer" class="hammer"> -->
+        <img src="./images/spanner.3acd9d9d.svg" alt="spanner" class="spanner">
+    </div>
+
+   
+    <div class="table-super-div">
+        <div class="table-sub-div">
+            <div class="left-table-content">
+                <div class="left-table-paragraph-text">
+                    <p>Java Topics</p>
+                </div>
+                <a class="java-topics  activeTopic" href="/package/package.html">Packages</a>
+                <a class="java-topics" href="/arrays/solArrq1.html">Arrays</a>
+                <a class="java-topics" href="/2dArray/2dArray.html">2d-Arrays</a>
+                <a class="java-topics" href="/Strings/strings.html">Strings</a>
+                <a class="java-topics" href="/inheritence/inhert1.html">Inheritence</a>
+                <a class="java-topics" href="/inputOutput/io.html">Input/Output</a>
+                <a class="java-topics " href="/interfaces/interfaces.html">Interfaces</a>
+                <a class="java-topics" href="/exception handling/exceptions.html">Exception-Handling</a>
+                <a class="java-topics" href="/inputOutput/io.html">Input/Output</a>
+                <a class="java-topics" href="/jdbc/jdbc.html">JDBC</a>
+                <a class="java-topics" href="/awt/awt.html" >AWT</a>
+                <a class="java-topics" href="/data conversion/dc1.html">Data Conversion</a>
+                <a class="java-topics" href="/delegation eventModel/dEM.html">Delegation Event model</a>
+                <a class="java-topics" href="/multithreading/multithreading.html">Multithreading</a>
+                <a style="display: none;" class="java-topics" href="/basics construct/basicConstruct.html" >Basic Construct</a>
+           </div>
+             <div class="right-table-content">
+                <div class="right-table-paragraph-text">
+                    <p>Questions</p> 
+                </div>
+                <div class="inheritQuest">
+                    <div class="questionContainer">
+                        <!-- 1 -->
+                              
+                        <div class="ques">
+                            <div class="heading top">
+                                <h5>1. Create a Java program to access the java.util.Date class through import keyword and print the current date of the system.*/
+                                </h5>
+                                <img src="" alt="">
+                            </div>
+                            <div class="overflowedDiv">
+                                <p>
+                                <code> import java.util.Date;
+                                  <br>  class getDate extends Date{
+                                  <br>      public int getDate(){
+                                  <br>          return super.getDate();
+                                  <br>      }
+                                  <br>  }
+                                  <br>  class Main{
+                                  <br>      public static void main(String ap[]){
+                                  <br>          getDate d1 = new getDate();
+                                  <br>          System.out.println(d1.getDate());
+                                  <br>      }
+                                  <br>  }</code>
+                                </p>
+                            </div>
+                         </div>
+                        <!-- 2 -->
+                       
+                        <div class="ques">
+                            <div class="heading top">
+                                <h5>2. Create a Java program to access the java.util.Date class through qualified way and print the current date of the system.*/
+                                </h5>
+                                <img src="" alt="">
+                            </div>
+                            <div class="overflowedDiv">
+                                <p>
+                                <code> import java.util.Date;
+                                    
+                                   <br> class Main{
+                                    <br> public static void main(String ap[]){
+                                        <br>    java.util.Date d1 = new java.util.Date();
+                                        <br>System.out.println(d1.getDate());
+                                        <br>}
+                                        <br>}</code>
+                                </p>
+                            </div>
+                         </div>
+<!-- 3 -->
+<div class="ques">
+    <div class="heading top">
+        <h5>3. Create a Java program to access the java.util.Date class7 through import keyword and print the current date of the system but inherit the Date class.*/
+        </h5>
+    </div>
+    <div class="overflowedDiv">
+        <p>
+        <code> import java.util.Date;
+<br> import java.util.Date;
+<br> class getDate extends Date{
+<br> 	public int getDate(){
+<br> 		return super.getDate();
+<br> 	}
+<br> }
+<br> class Main{
+<br> 	public static void main(String ap[]){
+<br> 		getDate d1 = new getDate();
+<br> 		System.out.println(d1.getDate());
+<br> 	}
+<br> }</code>
+        </p>
+    </div>
+ </div>
+
+<!-- 4 -->
+<div class="ques">
+    <div class="heading top">
+        <h5>5. Write a Java program to create an interface Resizable with methods resizeWidth(int width) and resizeHeight(int height) that allow an object to be resized. Create a class Rectangle that implements the Resizable interface and implements the resize methods.
+        </h5>
+        <img src="images/cross.png" alt="" class="cross" />
+    </div>
+    <div class="overflowedDiv">
+        <p>
+            <code>
+               <br> class MyDate extends java.util.Date {
+               <br>     MyDate() {
+               <br>         super();
+               <br>     }
+               <br> }
+               <br> 
+               <br> class Main {
+               <br>     public static void main(String ap[]) {
+               <br>         MyDate currentDate = new MyDate();
+               <br>         System.out.println("Current Date: " + currentDate);
+               <br>     }
+               <br> }
+        </code>
+        </p>
+    </div>
+</div>
+<!-- 5 
+<div class="ques">
+    <div class="heading top">
+        <h5>6. Write a Java program to create an interface Drawable with a method draw() that takes no arguments and returns void. Create three classes Circle, Rectangle, and Triangle that implement the Drawable interface and override the draw() method to draw their respective shapes.</h5>
+        <img src="images/cross.png" alt="" class="cross" />
+    </div>
+    <div class="overflowedDiv">
+        <p>
+            <code>
+            <br>    interface Drawable{
+            <br>        void draw();
+            <br>    }
+            <br>    class Circle implements Drawable{
+            <br>        public void draw(){
+            <br>            System.out.println("Circle has been drawn");
+            <br>        }
+            <br>    }
+            <br>    class Rectangle implements Drawable{
+            <br>        public void draw(){
+            <br>            System.out.println("Rectangle has been drawn");
+            <br>        }
+            <br>    }
+            <br>    class Triangle implements Drawable{
+            <br>        public void draw(){
+            <br>            System.out.println("Triangle has been drawn");
+            <br>        }
+            <br>    }
+            <br>    class Main{
+            <br>        public static void main(String ap[]){
+            <br>            Circle c = new Circle();
+            <br>            Triangle t = new Triangle();
+            <br>            Rectangle r = new Rectangle();
+            <br>        
+            <br>            c.draw();
+            <br>            t.draw();
+            <br>            r.draw();
+            <br>        }
+            <br>    }
+                 
+            </code>
+        </p>
+    </div>
+</div>
+-->
+<!-- 7
+ 
+<div class="ques">
+    <div class="heading top">
+        <h5>7. Write a Java program to create an interface Sortable with a method sort() that sorts an array of integers in ascending order. Create two classes BubbleSort and SelectionSort that implement the Sortable interface and provide their own implementations of the sort() method.</h5>
+        <img src="images/cross.png" alt="" class="cross" />
+    </div>
+    <div class="overflowedDiv">
+        <p>
+            <code>
+<br> <br>       /*7. Write a Java program to create an interface Sortable with a method sort() that sorts an array of integers in ascending order. Create two classes BubbleSort and SelectionSort that implement the Sortable interface and provide their own implementations of the sort() method.*/
+<br> 
+<br> 
+<br> interface Sortable {
+<br>     void sort(int arr[]);
+<br> }
+<br> 
+<br> class BubbleSort implements Sortable {
+<br>     public void sort(int arr[]) {
+<br>         for (int i = 0; i &lt; arr.length - 1; i++) {
+<br>             for (int j = 0; j &lt; arr.length - i - 1; j++) {
+<br>                 if (arr[j] > arr[j + 1]) {
+<br>                     int temp = arr[j];
+<br>                     arr[j] = arr[j + 1];
+<br>                     arr[j + 1] = temp;
+<br>                 }
+<br>             }
+<br>         }
+<br>     }
+<br> }
+<br> 
+<br> class SelectionSort implements Sortable {
+<br>    
+<br>     public void sort(int arr[]) {
+<br>         for (int i = 0; i &lt; arr.length - 1; i++) {
+<br>             int minIndex = i;
+<br>             for (int j = i + 1; j &lt; arr.length; j++) {
+<br>                 if (arr[j] &lt; arr[minIndex]) {
+<br>                     minIndex = j;
+<br>                 }
+<br>             }
+<br>             int temp = arr[i];
+<br>             arr[i] = arr[minIndex];
+<br>             arr[minIndex] = temp;
+<br>         }
+<br>     }
+<br> }
+<br> 
+<br> 
+<br> class Main {
+<br>     public static void main(String[] args) {
+<br>         int array[] = {64, 34, 25, 12, 22, 11, 90};
+<br> 	int i;
+<br> 	
+<br>         // Using BubbleSort
+<br>         BubbleSort b = new BubbleSort();
+<br>         System.out.println("Array values:");
+<br>         for(i=0;i&lt;array.length;i++){
+<br> 		System.out.println(array[i]);
+<br> 	}
+<br>         b.sort(array);
+<br>         System.out.println("Array values after Bubble Sort:");
+<br>        for(i=0;i&lt;array.length;i++){
+<br> 		System.out.println(array[i]);
+<br> 	}
+<br> 
+<br>         
+<br>         int array2[]= {64, 34, 25, 12, 22, 11, 90};
+<br> 
+<br>       
+<br>         SelectionSort s = new SelectionSort();
+<br>         System.out.println("\nArray before Selection Sort:");
+<br>         for(i=0;i&lt;array2.length;i++){
+<br> 		System.out.println(array[i]);
+<br> 	}
+<br>         s.sort(array2);
+<br>         System.out.println("Array after Selection Sort:");
+<br>         for(i=0;i&lt;array2.length;i++){
+<br> 		System.out.println(array[i]);
+<br> 	}
+<br>     }
+<br> 
+<br> }
+
+            </code>
+        </p>
+    </div>
+</div>
+-->
+
+
+
+<!-- 8 
+<div class="ques">
+    <div class="heading top">
+        <h5>8. Write a Java program to create an interface Playable with a method play() that takes no arguments and returns void. Create three classes Football, Volleyball, and Basketball that implement the Playable interface and override the play() method to play the respective sports.</h5>
+        <img src="images/cross.png" alt="" class="cross" />
+    </div>
+    <div class="overflowedDiv">
+        <p>
+            <code>
+            <br> 
+            <br>    interface Playable {
+            <br>        void play();
+            <br>    }
+            <br>    
+            <br>    class Football implements Playable {
+            <br>    
+            <br>        public void play() {
+            <br>            System.out.println("Playing Football");
+            <br>        }
+            <br>    }
+            <br>    
+            <br>    class Volleyball implements Playable {
+            <br>    
+            <br>        public void play() {
+            <br>            System.out.println("Playing Volleyball");
+            <br>        }
+            <br>    }
+            <br>    
+            <br>    class Basketball implements Playable {
+            <br>    
+            <br>        public void play() {
+            <br>            System.out.println("Playing Basketball");
+            <br>        }
+            <br>    }
+            <br>    
+            <br>     class Main {
+            <br>        public static void main(String[] args) {
+            <br>            Football f1 = new Football();
+            <br>            Volleyball v1 = new Volleyball();
+            <br>            Basketball  b1 = new Basketball();
+            <br>    
+            <br>            f1.play();
+            <br>            v1.play();
+            <br>            b1.play();
+            <br>        }
+            <br>    }
+                           
+            </code>
+        </p>
+    </div>
+</div>
+-->
+<!-- 9 
+<div class="ques">
+    <div class="heading top">
+        <h5>9. Write a Java program to create an interface Searchable with a method search(String keyword) that searches for a given keyword in a text document. Create two classes Document and WebPage that implement the Searchable interface and provide their own implementations of the search() method.</h5>
+        <img src="images/cross.png" alt="" class="cross" />
+    </div>
+    <div class="overflowedDiv">
+        <p>
+            <code>
+            <br>    interface Searchable {
+            <br>        void search(String keyword);
+            <br>    }
+            <br>    
+            <br>    class Document implements Searchable {
+            <br>        private String text;
+            <br>        public Document(String t) {
+            <br>            text = t;
+            <br>        }
+            <br>    
+            <br>        public void search(String keyword) {
+            <br>            if (text.contains(keyword)) {
+            <br>                System.out.println("Keyword found in Document.");
+            <br>            } else {
+            <br>                System.out.println("Keyword not found in Document.");
+            <br>            }
+            <br>        }
+            <br>    }
+            <br>    
+            <br>    class WebPage implements Searchable {
+            <br>        private String content;
+            <br>    
+            <br>        public WebPage(String c) {
+            <br>            content = c;
+            <br>        }
+            <br>    
+            <br>        public void search(String keyword) {
+            <br>            if (content.contains(keyword)) {
+            <br>                System.out.println("Keyword found in WebPage.");
+            <br>            } else {
+            <br>                System.out.println("Keyword not found in WebPage.");
+            <br>            }
+            <br>        }
+            <br>    }
+            <br>    
+            <br>    public class Main {
+            <br>        public static void main(String[] args) {
+            <br>            Searchable doc = new Document("This is a sample document text.");
+            <br>            Searchable webPage = new WebPage("This is content from a web page.");
+            <br>    
+            <br>            doc.search("sample");
+            <br>            webPage.search("web");
+            <br>        }
+            <br>    }
+            <br>    
+            <br>    
+            </code>
+        </p>
+    </div>
+</div>
+-->
+                    </div>
+                </div>
+            </div>
+                   
+        </div> 
+          
+    </div>
+
+    </main>
+<script src="/script.js"></script>
+</body>
+</html>
+
+

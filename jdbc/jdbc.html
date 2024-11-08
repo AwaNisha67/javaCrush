@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Bootstarp-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>CodeCrush</title>
+    <link rel="stylesheet" href="/eg.css">
+</head>
+<body>
+   
+    <main>
+
+         <nav class="container">
+            <div class="logoDiv">
+                <img class="logo"  alt="Logo" src="/images/clogo1.png"/>
+            </div>
+            <div class="list-items-div">
+                <ul class="lits-items-container">
+                    <li class="list-items"><a href="/index.html">main</a></li>
+                    <li class="list-items"><a href="/index.html">about</a></li>
+                    <li class="list-items"><a href="/practice.html">practice</a></li>
+                </ul>
+            </div>
+            <div class="search">
+                <!-- logo -->
+                <i class="bi bi-search"></i>
+            </div>
+        </nav> 
+
+    <div class="background-images">
+        <!-- <img  class="images" src="./images/dots.276a62aa.svg" alt="dotted background"> -->
+       <!-- <img style="top: -40px;" class="images" src="./images/bgblur.19fa1f96.svg" alt="graySparkle"> -->
+        <!-- <img src="./images/hammer.a618d04a.svg" alt="hammer" class="hammer"> -->
+        <img src="./images/spanner.3acd9d9d.svg" alt="spanner" class="spanner">
+    </div>
+
+   
+    <div class="table-super-div">
+        <div class="table-sub-div">
+            <div class="left-table-content">
+                <div class="left-table-paragraph-text">
+                    <p>Java Topics</p>
+                </div>
+                <a class="java-topics activeTopic" href="/jdbc/jdbc.html">JDBC</a>
+                    <a class="java-topics" href="/arrays/solArrq1.html">Arrays</a>
+                    <a class="java-topics" href="/2dArray/2dArray.html">2d-Arrays</a>
+                    <a class="java-topics" href="/Strings/strings.html">Strings</a>
+                    <a class="java-topics" href="/inheritence/inhert1.html">Inheritence</a>
+                    <a class="java-topics" href="/interfaces/interfaces.html">Interfaces</a>
+                    <a class="java-topics" href="/package/package.html">Packages</a>
+                    <a class="java-topics" href="/exception handling/exceptions.html">Exception-Handling</a>
+                    <a class="java-topics" href="/inputOutput/io.html">Input/Output</a>
+                    <a class="java-topics" href="/awt/awt.html" >AWT</a>
+                    <a class="java-topics" href="/data conversion/dc1.html">Data Conversion</a>
+                    <a class="java-topics" href="/delegation eventModel/dEM.html">Delegation Event model</a>
+                    <a class="java-topics" href="/multithreading/multithreading.html">Multithreading</a>
+                    <a style="display: none;" class="java-topics" href="/basics construct/basicConstruct.html" >Basic Construct</a>
+           </div>
+             <div class="right-table-content">
+                <div class="right-table-paragraph-text">
+                    <p>Questions</p> 
+                </div>
+                <div class="inheritQuest">
+                    <div class="questionContainer">
+                        <div class="ques">
+                            <div class="heading top">
+                                <h5>1. Create the connection with MySQL Database and manage the driver.</h5>
+                                <img src="images/cross.png" alt="" class="cross" />
+                            </div>
+                            <div class="overflowedDiv">
+                                <p>
+                                    <code>
+                                        import java.sql.*;<br><br>
+
+                                        class Main{<br>
+                                            public static void main(<span>String</span> ap[]){<br>
+                                                //load Drivers <br> 
+                                                try{<br>
+                                                <span>Class</span>.forName("com.mysql.cj.jdbc.Driver");<br>
+                                                //connection<br>
+                                                <span>String</span> path = "jdbc:mysql://localhost:3306/javadb";<br>
+                                                <span>String</span> user = "root";<br>
+                                                <span>String</span> pass = "9780314063";<br>
+                                                <br>
+                                                <span>Connection</span> c1 = <span>DriverManager</span>.getConnection(path,user,pass);<br>
+                                                }catch(java.lang.<span style="color: rgba(255, 0, 0, 0.718);">ClassNotFoundException</span> e){<br>
+                                                   <span>System</span>.out.println("ClassNotFoundException");<br>
+                                                }catch(<span style="color: rgba(255, 0, 0, 0.718);">SQLException</span> e){<br>
+                                                    <span>System</span>.out.println("SQLException");<br>	
+                                                }<br>
+                                                <span>System</span>.out.println("Connection has been established");<br>
+                                            }<br>
+                                        }<br>
+                                    </code>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="ques">
+                            <div class="heading top">
+                                <h5>2. Create the table in the database from Java API.</h5>
+                                <img src="images/cross.png" alt="" class="cross" />
+                            </div>
+                            <div class="overflowedDiv">
+                                <p>
+                                    <code>
+                                        import java.sql.*;<br><br>
+                                        
+                                        class Main{<br>
+                                            public static void main(<span>String</span> ap[]){<br>
+                                                <span>String</span> path = "jdbc:mysql://localhost:3306/javadb";<br>
+                                                <span>Connection</span> c1 = null;<br>
+                                                try{<br>
+                                                    //load drivers <br>
+                                                    <span>Class</span>.forName("com.mysql.cj.jdbc.Driver");<br>
+                                                    //connection<br>
+                                                    c1 = <span>DriverManager</span>.getConnection(path,"root","9780314063");<br>
+                                                    //query Create<br>
+                                                    <span>Statement</span> st1 = c1.createStatement();<br>
+                                                    //query execute<br>
+                                                    int rows = st1.executeUpdate("CREATE TABLE tb1 (rollno int, name varchar(20))");<br>
+                                                    <span>System</span>.out.println(rows);<br>
+                                                }catch(java.lang.<span style="color: rgba(255, 0, 0, 0.718);">ClassNotFoundException</span> e){<br>
+                                                    <span>System</span>.out.println("Class not found");<br>
+                                                }catch(<span style="color: rgba(255, 0, 0, 0.718);">SQLException</span> s){<br>
+                                                    <span>System</span>.out.println("Some error has accured");<br>
+                                                }<br>
+                                                finally{<br>
+                                                    //closing the connection<br>
+                                                    try{<br>
+                                                        c1.close();<br>
+                                                    }catch(<span style="color: rgba(255, 0, 0, 0.718);">SQLException</span> s){<br>
+                                                        <span>System</span>.out.println("Some error has accured");<br>
+                                                    }<br>
+                                                }<br>
+                                                
+                                            }<br>
+                                        }<br>
+                                    </code>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="ques">
+                            <div class="heading top">
+                                <h5>3. Insert the row in the table in the database from Java API.</h5>
+                                <img src="images/cross.png" alt="" class="cross" />
+                            </div>
+                            <div class="overflowedDiv">
+                                <p>
+                                    <code>
+                                        import java.sql.*;<br><br>
+                                        
+                                        class Main{<br>
+                                            public static void main(<span>String</span> ap[]){<br>
+                                                <span>String</span> path = "jdbc:mysql://localhost:3306/javadb";<br>
+                                                <span>Connection</span> c1 = null;<br>
+                                                try{<br>
+                                                    //load drivers <br>
+                                                    <span>Class</span>.forName("com.mysql.cj.jdbc.Driver");<br>
+                                                    //connection<br>
+                                                    c1 = <span>DriverManager</span>.getConnection(path,"root","9780314063");<br>
+                                                    //query Create<br>
+                                                    <span>Statement</span> st1 = c1.createStatement();<br>
+                                                    //query execute<br>
+                                                    int rows = st1.executeUpdate("INSERT INTO tb1 VALUES (4267,'abc'),(4286,'mcd'),(4272,'kfc')");<br>
+                                                    <span>System</span>.out.println("Rows affected:" + rows);<br>
+                                                }catch(java.lang.<span style="color: rgba(255, 0, 0, 0.718);">ClassNotFoundException</span> e){<br>
+                                                    <span>System</span>.out.println("Class not found");<br>
+                                                }catch(<span style="color: rgba(255, 0, 0, 0.718);">SQLException</span> s){<br>
+                                                    <span>System</span>.out.println("Some error has accured");<br>
+                                                }<br>
+                                                finally{<br>
+                                                    //closing the connection<br>
+                                                    try{<br>
+                                                        c1.close();<br>
+                                                    }catch(<span style="color: rgba(255, 0, 0, 0.718);">SQLException</span> s){<br>
+                                                        <span>System</span>.out.println("Some error has accured");<br>
+                                                    }<br>
+                                                }<br>
+                                                
+                                            }<br>
+                                        }<br>
+                                    </code>
+                                </p>
+                            </div>
+                        </div>
+                       
+                        <div class="ques">
+                            <div class="heading top">
+                                <h5>4. Update the row in the table in the database from Java API.</h5>
+                                <img src="images/cross.png" alt="" class="cross" />
+                            </div>
+                            <div class="overflowedDiv">
+                                <p>
+                                    <code>
+                                        import java.sql.*;<br><br>
+                                        
+                                        class Main{<br>
+                                            public static void main(<span>String</span> ap[]){<br>
+                                                <span>String</span> path = "jdbc:mysql://localhost:3306/javadb";<br>
+                                                <span>Connection</span> c1 = null;<br>
+                                                try{<br>
+                                                    //load drivers <br>
+                                                    <span>Class</span>.forName("com.mysql.cj.jdbc.Driver");<br>
+                                                    //connection<br>
+                                                    c1 = <span>DriverManager</span>.getConnection(path,"root","9780314063");<br>
+                                                    //query Create<br>
+                                                    <span>Statement</span> st1 = c1.createStatement();<br>
+                                                    //query execute<br>
+                                                    int rows = st1.executeUpdate("UPDATE tb1 SET name = 'avni' WHERE rollno = 4267");
+                                                     <span>System</span>.out.println("Rows updated:" + rows);
+                                                }catch(java.lang.<span style="color: rgba(255, 0, 0, 0.718);">ClassNotFoundException</span> e){<br>
+                                                    <span>System</span>.out.println("Class not found");<br>
+                                                }catch(<span style="color: rgba(255, 0, 0, 0.718);">SQLException</span> s){<br>
+                                                    <span>System</span>.out.println("Some error has accured");<br>
+                                                }<br>
+                                                finally{<br>
+                                                    //closing the connection<br>
+                                                    try{<br>
+                                                        c1.close();<br>
+                                                    }catch(<span style="color: rgba(255, 0, 0, 0.718);">SQLException</span> s){<br>
+                                                        <span>System</span>.out.println("Some error has accured");<br>
+                                                    }<br>
+                                                }<br>
+                                                
+                                            }<br>
+                                        }<br>
+                                    </code>
+                                </p>
+                            </div>
+                        </div>
+                    
+
+
+                        <div class="ques">
+                            <div class="heading top">
+                                <h5>5. Delete the row in the table in the database from Java API</h5>
+                                <img src="images/cross.png" alt="" class="cross" />
+                            </div>
+                            <div class="overflowedDiv">
+                                <p>
+                                    <code>
+                                        import java.sql.*;
+                                   <br><br>     
+                                   <br> class Main{
+                                    <br>     public static void main(String ap[]){
+                                        <br>        String path = "jdbc:mysql://localhost:3306/javadb";
+                                        <br>    Connection c1 = null;
+                                        <br>    //load the drivers
+                                        <br>    try{
+                                                  <br> Class.forName("com.mysql.cj.jdbc.Driver");
+                                                <br>  //connection establish 
+                                                <br>    c1 = DriverManager.getConnection(path,"root","9780314063");
+                                                <br>    //query create
+                                                <br>    Statement st1 = c1.createStatement();
+                                                <br>    //query execute
+                                                <br>    int rows = st1.executeUpdate("DELETE FROM tb1 WHERE rollno = 4267");
+                                                <br>    System.out.println("Rows Deleted:" + rows);
+                                                <br>}catch(ClassNotFoundException e){
+                                                <br>    System.out.println("Class not found");
+                                                <br>}
+                                                <br>catch(SQLException e){
+                                                  <br>  System.out.println("unfortunate error");
+                                               <br> }
+                                           <br> }
+                                       <br> }
+                                    </code>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="ques">
+                            <div class="heading top">
+                                <h5>7. Create a Scrollable Readonly Resultset and ask the row number from the user and display that row on the screen.
+                                </h5>
+                                <img src="images/cross.png" alt="" class="cross" />
+                            </div>
+                            <div class="overflowedDiv">
+                                <p>
+                                    <code>
+                                        import java.sql.*;
+
+<br><br>class Main{
+<br>	public static void main(String ap[]) throws ClassNotFoundException, java.sql.SQLException{
+<br>	String path = "jdbc:mysql://localhost:3306/javadb";
+<br>	String user = "root";
+<br>	String pass = "9780314063";
+<br>
+<br>	//load the drivers
+<br>	Class.forName("com.mysql.cj.jdbc.Driver");
+<br>
+<br>	//establish a connection
+<br>	Connection c1 = DriverManager.getConnection(path,user,pass);
+<br>	
+<br>	Statement stmt = c1.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE,ResultSet.CONCUR_READ_ONLY);
+<br>	ResultSet rs = stmt.executeQuery("select * from student");
+<br>	
+<br>	System.out.println(rs.next());//true
+<br>	System.out.println(rs.getInt(1));
+<br>	System.out.println(rs.getString(2));
+<br>	}
+<br>
+}<br>
+                                        </code>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="ques">
+                            <div class="heading top">
+                                <h5>8. Create a Scrollable Updateable Resultset and insert a new row, update an existing row and delete the row from Resultset and also the changes should be made to the database also. The values should be inserted, updated and deleted by the user only.</h5>
+                                <img src="images/cross.png" alt="" class="cross" />
+                            </div>
+                            <div class="overflowedDiv">
+                                <p style="height: 100vh;overflow: scroll;">
+                                    <code>
+                                        import java.sql.*;
+                                        <br>import java.util.Scanner;
+                                        <br>
+                                        <br>class Main {
+                                        <br>    public static void main(String[] args) throws ClassNotFoundException, SQLException {
+                                        <br>        String path = "jdbc:mysql://localhost:3306/javadb";
+                                        <br>        String user = "root";
+                                        <br>        String password = "9780314063";
+                                        <br>        Scanner sc = new Scanner(System.in);
+                                        <br>
+                                        <br>        // Load the JDBC driver
+                                        <br>        Class.forName("com.mysql.cj.jdbc.Driver");
+                                        <br>        // Establish a connection
+                                        <br>        Connection c1 = DriverManager.getConnection(path, user, password);
+                                        <br>
+                                        <br>        // Create a scrollable and updatable ResultSet
+                                        <br>        Statement stmt = c1.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.CONCUR_UPDATABLE);
+                                        <br>        ResultSet rs = stmt.executeQuery("SELECT * FROM student");
+                                        <br>
+                                        <br>        while (true) {
+                                        <br>            System.out.println("Press 1: Insert a row");
+                                        <br>            System.out.println("Press 2: Update an existing row");
+                                        <br>            System.out.println("Press 3: Delete a row");
+                                        <br>            System.out.println("Press 4: Quit");
+                                        <br>            System.out.print("Enter your choice: ");
+                                        <br>            int input = sc.nextInt();
+                                        <br>            sc.nextLine();
+                                        <br>            switch (input) {
+                                        <br>                case 1: // Insert
+                                        <br>                    System.out.print("Enter roll number: ");
+                                        <br>                    int srollno = sc.nextInt();
+                                        <br>                    sc.nextLine();
+                                        <br>
+                                        <br>                    // Insert into ResultSet
+                                        <br>                    rs.moveToInsertRow();	
+                                        <br>                    rs.updateInt("rollno", srollno);
+                                        <br>                   
+                                        <br>                    System.out.print("Enter name: ");
+                                        <br>                    String name = sc.nextLine();
+                                        <br>                    rs.updateString("name", name);
+                                        <br>                    rs.insertRow();
+                                        <br>                    System.out.println("Row inserted successfully.");
+                                        <br>                    break;
+                                        <br>
+                                        <br>                case 2: // Update
+                                        <br>                    System.out.print("Enter roll number to update: ");
+                                        <br>                    int sprevRoll = sc.nextInt();
+                                        <br>                    sc.nextLine();
+                                        <br>
+                                        <br>                    System.out.print("Enter new roll number: ");
+                                        <br>                    int currRoll = sc.nextInt();
+                                        <br>                    sc.nextLine(); 
+                                        <br>
+                                        <br>                    boolean exist = false;
+                                        <br>                    while (rs.next()) {
+                                        <br>                        if (sprevRoll == rs.getInt("rollno")) {
+                                        <br>                            rs.updateInt("rollno", currRoll);
+                                        <br>                            rs.updateRow();
+                                        <br>                            System.out.println("Roll number updated successfully.");
+                                        <br>                            exist= true;
+                                        <br>                            break; // Exit loop after updating
+                                        <br>                        }
+                                        <br>                    }
+                                        <br>                    if (!exist) {
+                                        <br>                        System.out.println("Roll number " + sprevRoll + " not found.");
+                                        <br>                    }
+                                        <br>                    break;
+                                        <br>
+                                        <br>                case 3: // Delete
+                                        <br>                    System.out.print("Enter roll number to delete: ");
+                                        <br>                    int rollToDelete = sc.nextInt();
+                                        <br>                    sc.nextLine();
+                                        <br>
+                                        <br>                    exist = false; 
+                                        <br>                    while (rs.next()) {
+                                        <br>                        if (rollToDelete == rs.getInt("rollno")) {
+                                        <br>                            rs.deleteRow();
+                                        <br>                            System.out.println("Row deleted successfully.");
+                                        <br>                            exist= true;
+                                        <br>                            break; // Exit loop after deleting
+                                        <br>                        }
+                                        <br>                    }
+                                        <br>                    if (!exist) {
+                                        <br>                        System.out.println("Roll number " + rollToDelete + " not found.");
+                                        <br>                    }
+                                        <br>                    break;
+                                        <br>
+                                        <br>                case 4: // Quit
+                                        <br>                    System.out.println("Exiting...");
+                                        <br>                    rs.close();
+                                        <br>                    stmt.close();
+                                        <br>                    c1.close();
+                                        <br>                    sc.close();
+                                        <br>                    return;
+                                        <br>
+                                        <br>                default:
+                                        <br>                    System.out.println("Invalid choice. Please try again.");
+                                        <br>            }
+                                        <br>        }
+                                        <br>    }
+                                        <br>}
+                                   </code>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="ques">
+                            <div class="heading top">
+                                <h5>9. Create a Java Program to show, insert, update, delete of the table in Java API through PreparedStatement</h5>
+                                <img src="images/cross.png" alt="" class="cross" />
+                            </div>
+                            <div class="overflowedDiv">
+                                <p>
+                                    <code>
+                                       import java.sql.*;
+<br> <br>  
+<br>class Main{
+<br>	public static void main(String ap[]){
+<br>		String path = "jdbc:mysql://localhost:3306/javadb";
+<br>		Connection c1 = null;
+<br>			//load the drivers
+<br>		try{
+<br>		Class.forName("com.mysql.cj.jdbc.Driver");
+<br>			//connection establish 
+<br>		c1 = DriverManager.getConnection(path,"root","9780314063");
+<br>			//query create
+<br>		PreparedStatement psmt1 = c1.prepareStatement("INSERT INTO tb1 VALUES(?,?)");
+<br>		psmt1.setInt(1,4265);
+<br>		psmt1.setString(2,"irfaan");
+<br>		int rowsAffected = psmt1.executeUpdate();
+<br>		
+<br>		PreparedStatement psmt2 = c1.prepareStatement("DELETE FROM tb1 WHERE name = ?");
+<br>		psmt2.setString(1,"irfaan");
+<br>		int rowsDeleted = psmt2.executeUpdate();
+<br>		}catch(ClassNotFoundException e){
+<br>			System.out.println("Class not found");
+<br>		}
+<br>		catch(SQLException e){
+<br>			System.out.println("unfortunate error");
+<br>		}
+<br>	}
+<br>}
+<br>                                    </code>
+                                </p>
+                            </div>
+                        </div>
+
+                    
+                    </div>
+                </div>
+            </div>
+                   
+        </div> 
+          
+    </div>
+
+    </main>
+<script src="/script.js"></script>
+</body>
+</html>
+
+

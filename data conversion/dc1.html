@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Bootstarp-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>CodeCrush</title>
+    <link rel="stylesheet" href="/eg.css">
+</head>
+<body>
+   
+    <main>
+
+         <nav class="container">
+            <div class="logoDiv">
+                <img class="logo"  alt="Logo" src="/images/clogo1.png"/>
+            </div>
+            <div class="list-items-div">
+                <ul class="lits-items-container">
+                    <li class="list-items"><a href="/index.html">main</a></li>
+                    <li class="list-items"><a href="/index.html">about</a></li>
+                    <li class="list-items"><a href="/practice.html">practice</a></li>
+                </ul>
+            </div>
+            <div class="search">
+                <!-- logo -->
+                <i class="bi bi-search"></i>
+            </div>
+        </nav> 
+
+    <div class="background-images">
+        <!-- <img  class="images" src="./images/dots.276a62aa.svg" alt="dotted background"> -->
+       <!-- <img style="top: -40px;" class="images" src="./images/bgblur.19fa1f96.svg" alt="graySparkle"> -->
+        <!-- <img src="./images/hammer.a618d04a.svg" alt="hammer" class="hammer"> -->
+        <img src="./images/spanner.3acd9d9d.svg" alt="spanner" class="spanner">
+    </div>
+
+   
+    <div class="table-super-div">
+        <div class="table-sub-div">
+            <div class="left-table-content">
+                <div class="left-table-paragraph-text">
+                    <p>Java Topics</p>
+                </div>
+                <a class="java-topics activeTopic" href="/data conversion/dc1.html">Data Conversion</a>
+                <a class="java-topics " href="/arrays/solArrq1.html">Arrays</a>
+                <a class="java-topics" href="/2dArray/2dArray.html">2d-Arrays</a>
+                <a class="java-topics" href="/Strings/strings.html">Strings</a>
+                <a class="java-topics" href="/inheritence/inhert1.html">Inheritence</a>
+                <a class="java-topics" href="/interfaces/interfaces.html">Interfaces</a>
+                <a class="java-topics" href="/package/package.html">Packages</a>
+                <a class="java-topics" href="/exception handling/exceptions.html">Exception-Handling</a>
+                <a class="java-topics" href="/inputOutput/io.html">Input/Output</a>
+                <a class="java-topics" href="/jdbc/jdbc.html">JDBC</a>
+                <a class="java-topics" href="/awt/awt.html" >AWT</a>
+                <a class="java-topics" href="/delegation eventModel/dEM.html">Delegation Event model</a>
+                <a class="java-topics" href="/multithreading/multithreading.html">Multithreading</a>
+                <a style="display: none;" class="java-topics" href="/basics construct/basicConstruct.html" >Basic Construct</a>
+           </div>
+             <div class="right-table-content">
+                <div class="right-table-paragraph-text">
+                    <p>Data Conversion practice questions</p> 
+                </div>
+                <div class="inheritQuest">
+                    <div class="questionContainer">
+                        <div class="ques">
+                            <div class="heading top">
+                                <h5>1. How to convert String to int</h5>
+                                <img src="images/cross.png" alt="" class="cross" />
+                            </div>
+                            <div class="overflowedDiv">
+                                <p>
+                                    <code>
+                                        class Main {<br>
+                                            public static void main(String ap[]) {<br>
+                                                // String to int conversion<br>
+                                                String str = "123";<br>
+                                                int num = Integer.parseInt(str);<br>
+                                                System.out.println("String to int: " + num);<br>
+                                            }<br>
+                                        }<br>
+                                    </code>
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="ques">
+                            <div class="heading top">
+                                <h5>2. How to convert int to String</h5>
+                                <img src="images/cross.png" alt="" class="cross" />
+                            </div>
+                            <div class="overflowedDiv">
+                                <p>
+                                    <code>
+                                        class Main {<br>
+                                            public static void main(String ap[]) {<br>
+                                                // int to String conversion<br>
+                                                int num = 123;<br>
+                                                String str = Integer.toString(num);<br>
+                                                System.out.println("int to String: " + str);<br>
+                                            }<br>
+                                        }<br>
+                                    </code>
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="ques">
+                            <div class="heading top">
+                                <h5>3. How to convert String to long</h5>
+                                <img src="images/cross.png" alt="" class="cross" />
+                            </div>
+                            <div class="overflowedDiv">
+                                <p>
+                                    <code>
+                                        class Main {<br>
+                                            public static void main(String ap[]) {<br>
+                                                // String to long conversion<br>
+                                                String str = "123456";<br>
+                                                long num = Long.parseLong(str);<br>
+                                                System.out.println("String to long: " + num);<br>
+                                            }<br>
+                                        }<br>
+                                    </code>
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="ques">
+                            <div class="heading top">
+                                <h5>4. How to convert long to String</h5>
+                                <img src="images/cross.png" alt="" class="cross" />
+                            </div>
+                            <div class="overflowedDiv">
+                                <p>
+                                    <code>
+                                        class Main {<br>
+                                            public static void main(String ap[]) {<br>
+                                                // long to String conversion<br>
+                                                long num = 123456;<br>
+                                                String str = Long.toString(num);<br>
+                                                System.out.println("long to String: " + str);<br>
+                                            }<br>
+                                        }<br>
+                                    </code>
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="ques">
+                            <div class="heading top">
+                                <h5>5. How to convert String to float</h5>
+                                <img src="images/cross.png" alt="" class="cross" />
+                            </div>
+                            <div class="overflowedDiv">
+                                <p>
+                                    <code>
+                                        class Main {<br>
+                                            public static void main(String ap[]) {<br>
+                                                // String to float conversion<br>
+                                                String str = "12.34";<br>
+                                                float num = Float.parseFloat(str);<br>
+                                                System.out.println("String to float: " + num);<br>
+                                            }<br>
+                                        }<br>
+                                    </code>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="ques">
+                            <div class="heading top">
+                                <h5>6. How to convert float to String</h5>
+                                <img src="images/cross.png" alt="" class="cross" />
+                            </div>
+                            <div class="overflowedDiv">
+                                <p>
+                                    <code>
+                                        class Main {<br>
+                                            public static void main(String ap[]) {<br>
+                                                // float to String conversion<br>
+                                                float num = 12.34f;<br>
+                                                String str = Float.toString(num);<br>
+                                                System.out.println("float to String: " + str);<br>
+                                            }<br>
+                                        }<br>
+                                    </code>
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="ques">
+                            <div class="heading top">
+                                <h5>7. How to convert String to double</h5>
+                                <img src="images/cross.png" alt="" class="cross" />
+                            </div>
+                            <div class="overflowedDiv">
+                                <p>
+                                    <code>
+                                        class Main {<br>
+                                            public static void main(String ap[]) {<br>
+                                                // String to double conversion<br>
+                                                String str = "12.34";<br>
+                                                double num = Double.parseDouble(str);<br>
+                                                System.out.println("String to double: " + num);<br>
+                                            }<br>
+                                        }<br>
+                                    </code>
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="ques">
+                            <div class="heading top">
+                                <h5>8. How to convert double to String</h5>
+                                <img src="images/cross.png" alt="" class="cross" />
+                            </div>
+                            <div class="overflowedDiv">
+                                <p>
+                                    <code>
+                                        class Main {<br>
+                                            public static void main(String ap[]) {<br>
+                                                // double to String conversion<br>
+                                                double num = 12.34;<br>
+                                                String str = Double.toString(num);<br>
+                                                System.out.println("double to String: " + str);<br>
+                                            }<br>
+                                        }<br>
+                                    </code>
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="ques">
+                            <div class="heading top">
+                                <h5>9. How to convert String to Date</h5>
+                                <img src="images/cross.png" alt="" class="cross" />
+                            </div>
+                            <div class="overflowedDiv">
+                                <p>
+                                    <code>
+                                        import java.text.SimpleDateFormat;<br>
+                                        import java.util.Date;<br><br>
+                                        class Main {<br>
+                                            public static void main(String ap[]) {<br>
+                                                // String to Date conversion<br>
+                                                String str = "2024-11-07";<br>
+                                                SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");<br>
+                                                try {<br>
+                                                    Date date = sdf.parse(str);<br>
+                                                    System.out.println("String to Date: " + date);<br>
+                                                } catch (Exception e) {<br>
+                                                    e.printStackTrace();<br>
+                                                }<br>
+                                            }<br>
+                                        }<br>
+                                    </code>
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="ques">
+                            <div class="heading top">
+                                <h5>10. How to convert Date to String</h5>
+                                <img src="images/cross.png" alt="" class="cross" />
+                            </div>
+                            <div class="overflowedDiv">
+                                <p>
+                                    <code>
+                                        import java.text.SimpleDateFormat;<br>
+                                        import java.util.Date;<br><br>
+                                        class Main {<br>
+                                            public static void main(String ap[]) {<br>
+                                                // Date to String conversion<br>
+                                                Date date = new Date();<br>
+                                                SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");<br>
+                                                String str = sdf.format(date);<br>
+                                                System.out.println("Date to String: " + str);<br>
+                                            }<br>
+                                        }<br>
+                                    </code>
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="ques">
+                            <div class="heading top">
+                                <h5>11. How to convert String to char</h5>
+                                <img src="images/cross.png" alt="" class="cross" />
+                            </div>
+                            <div class="overflowedDiv">
+                                <p>
+                                    <code>
+                                        class Main {<br>
+                                            public static void main(String ap[]) {<br>
+                                                // String to char conversion<br>
+                                                String str = "A";<br>
+                                                char ch = str.charAt(0);<br>
+                                                System.out.println("String to char: " + ch);<br>
+                                            }<br>
+                                        }<br>
+                                    </code>
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="ques">
+                            <div class="heading top">
+                                <h5>12. How to convert char to String</h5>
+                                <img src="images/cross.png" alt="" class="cross" />
+                            </div>
+                            <div class="overflowedDiv">
+                                <p>
+                                    <code>
+                                        class Main {<br>
+                                            public static void main(String ap[]) {<br>
+                                                // char to String conversion<br>
+                                                char ch = 'A';<br>
+                                                String str = Character.toString(ch);<br>
+                                                System.out.println("char to String: " + str);<br>
+                                            }<br>
+                                        }<br>
+                                    </code>
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="ques">
+                            <div class="heading top">
+                                <h5>13. How to convert String to Object</h5>
+                                <img src="images/cross.png" alt="" class="cross" />
+                            </div>
+                            <div class="overflowedDiv">
+                                <p>
+                                    <code>
+                                        class Main {<br>
+                                            public static void main(String ap[]) {<br>
+                                                // String to Object conversion<br>
+                                                String str = "Hello, World!";<br>
+                                                Object obj = str;<br>
+                                                System.out.println("String to Object: " + obj);<br>
+                                            }<br>
+                                        }<br>
+                                    </code>
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="ques">
+                            <div class="heading top">
+                                <h5>14. How to convert Object to String</h5>
+                                <img src="images/cross.png" alt="" class="cross" />
+                            </div>
+                            <div class="overflowedDiv">
+                                <p>
+                                    <code>
+                                        class Main {<br>
+                                            public static void main(String ap[]) {<br>
+                                                // Object to String conversion<br>
+                                                Object obj = "Hello, World!";<br>
+                                                String str = obj.toString();<br>
+                                                System.out.println("Object to String: " + str);<br>
+                                            }<br>
+                                        }<br>
+                                    </code>
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="ques">
+                            <div class="heading top">
+                                <h5>15. How to convert int to long</h5>
+                                <img src="images/cross.png" alt="" class="cross" />
+                            </div>
+                            <div class="overflowedDiv">
+                                <p>
+                                    <code>
+                                        class Main {<br>
+                                            public static void main(String ap[]) {<br>
+                                                // int to long conversion<br>
+                                                int num = 123;<br>
+                                                long lnum = (long) num;<br>
+                                                System.out.println("int to long: " + lnum);<br>
+                                            }<br>
+                                        }<br>
+                                    </code>
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="ques">
+                            <div class="heading top">
+                                <h5>16. How to convert long to int</h5>
+                                <img src="images/cross.png" alt="" class="cross" />
+                            </div>
+                            <div class="overflowedDiv">
+                                <p>
+                                    <code>
+                                        class Main {<br>
+                                            public static void main(String ap[]) {<br>
+                                                // long to int conversion<br>
+                                                long lnum = 123456L;<br>
+                                                int num = (int) lnum;<br>
+                                                System.out.println("long to int: " + num);<br>
+                                            }<br>
+                                        }<br>
+                                    </code>
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="ques">
+                            <div class="heading top">
+                                <h5>17. How to convert int to double</h5>
+                                <img src="images/cross.png" alt="" class="cross" />
+                            </div>
+                            <div class="overflowedDiv">
+                                <p>
+                                    <code>
+                                        class Main {<br>
+                                        &nbsp;&nbsp;&nbsp;public static void main(String ap[]) {<br>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// int to double conversion<br>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;int num = 123;<br>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;double dnum = (double) num;<br>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("int to double: " + dnum);<br>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+                                        }<br>
+                                    </code>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="ques">
+                            <div class="heading top">
+                                <h5>18. How to convert double to int</h5>
+                                <img src="images/cross.png" alt="" class="cross" />
+                            </div>
+                            <div class="overflowedDiv">
+                                <p>
+                                    <code>
+                                        class Main {<br>
+                                            public static void main(String ap[]) {<br>
+                                                // double to int conversion<br>
+                                                double dnum = 12.34;<br>
+                                                int num = (int) dnum;<br>
+                                                System.out.println("double to int: " + num);<br>
+                                            }<br>
+                                        }<br>
+                                    </code>
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="ques">
+                            <div class="heading top">
+                                <h5>19. How to convert char to int</h5>
+                                <img src="images/cross.png" alt="" class="cross" />
+                            </div>
+                            <div class="overflowedDiv">
+                                <p>
+                                    <code>
+                                        class Main {<br>
+                                            public static void main(String ap[]) {<br>
+                                                // char to int conversion<br>
+                                                char ch = 'A';<br>
+                                                int num = (int) ch;<br>
+                                                System.out.println("char to int: " + num);<br>
+                                            }<br>
+                                        }<br>
+                                    </code>
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="ques">
+                            <div class="heading top">
+                                <h5>20. How to convert int to char</h5>
+                                <img src="images/cross.png" alt="" class="cross" />
+                            </div>
+                            <div class="overflowedDiv">
+                                <p>
+                                    <code>
+                                        class Main {<br>
+                                            public static void main(String ap[]) {<br>
+                                                // int to char conversion<br>
+                                                int num = 65;<br>
+                                                char ch = (char) num;<br>
+                                                System.out.println("int to char: " + ch);<br>
+                                            }<br>
+                                        }<br>
+                                    </code>
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="ques">
+                            <div class="heading top">
+                                <h5>21. How to convert String to boolean</h5>
+                                <img src="images/cross.png" alt="" class="cross" />
+                            </div>
+                            <div class="overflowedDiv">
+                                <p>
+                                    <code>
+                                        class Main {<br>
+                                            public static void main(String ap[]) {<br>
+                                                // String to boolean conversion<br>
+                                                String str = "true";<br>
+                                                boolean bool = Boolean.parseBoolean(str);<br>
+                                                System.out.println("String to boolean: " + bool);<br>
+                                            }<br>
+                                        }<br>
+                                    </code>
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="ques">
+                            <div class="heading top">
+                                <h5>22. How to convert boolean to String</h5>
+                                <img src="images/cross.png" alt="" class="cross" />
+                            </div>
+                            <div class="overflowedDiv">
+                                <p>
+                                    <code>
+                                        class Main {<br>
+                                            public static void main(String ap[]) {<br>
+                                                // boolean to String conversion<br>
+                                                boolean bool = true;<br>
+                                                String str = Boolean.toString(bool);<br>
+                                                System.out.println("boolean to String: " + str);<br>
+                                            }<br>
+                                        }<br>
+                                    </code>
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="ques">
+                            <div class="heading top">
+                                <h5>23. How to convert Date to Timestamp</h5>
+                                <img src="images/cross.png" alt="" class="cross" />
+                            </div>
+                            <div class="overflowedDiv">
+                                <p>
+                                    <code>
+                                        import java.sql.Timestamp;<br>
+                                        import java.util.Date;<br><br>
+                                        class Main {<br>
+                                            public static void main(String ap[]) {<br>
+                                                // Date to Timestamp conversion<br>
+                                                Date date = new Date();<br>
+                                                Timestamp timestamp = new Timestamp(date.getTime());<br>
+                                                System.out.println("Date to Timestamp: " + timestamp);<br>
+                                            }<br>
+                                        }<br>
+                                    </code>
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="ques">
+                            <div class="heading top">
+                                <h5>24. How to convert Timestamp to Date</h5>
+                                <img src="images/cross.png" alt="" class="cross" />
+                            </div>
+                            <div class="overflowedDiv">
+                                <p>
+                                    <code>
+                                        import java.sql.Timestamp;<br>
+                                        import java.util.Date;<br><br>
+                                        class Main {<br>
+                                            public static void main(String ap[]) {<br>
+                                                // Timestamp to Date conversion<br>
+                                                Timestamp timestamp = new Timestamp(System.currentTimeMillis());<br>
+                                                Date date = new Date(timestamp.getTime());<br>
+                                                System.out.println("Timestamp to Date: " + date);<br>
+                                            }<br>
+                                        }<br>
+                                    </code>
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="ques">
+                            <div class="heading top">
+                                <h5>25. How to convert Binary to Decimal</h5>
+                                <img src="images/cross.png" alt="" class="cross" />
+                            </div>
+                            <div class="overflowedDiv">
+                                <p>
+                                    <code>
+                                        class Main {<br>
+                                            public static void main(String ap[]) {<br>
+                                                // Binary to Decimal conversion<br>
+                                                String binary = "1010";<br>
+                                                int decimal = Integer.parseInt(binary, 2);<br>
+                                                System.out.println("Binary to Decimal: " + decimal);<br>
+                                            }<br>
+                                        }<br>
+                                    </code>
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="ques">
+                            <div class="heading top">
+                                <h5>26. How to convert Decimal to Binary</h5>
+                                <img src="images/cross.png" alt="" class="cross" />
+                            </div>
+                            <div class="overflowedDiv">
+                                <p>
+                                    <code>
+                                        class Main {<br>
+                                            public static void main(String ap[]) {<br>
+                                                // Decimal to Binary conversion<br>
+                                                int decimal = 10;<br>
+                                                String binary = Integer.toBinaryString(decimal);<br>
+                                                System.out.println("Decimal to Binary: " + binary);<br>
+                                            }<br>
+                                        }<br>
+                                    </code>
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="ques">
+                            <div class="heading top">
+                                <h5>27. How to convert Hex to Decimal</h5>
+                                <img src="images/cross.png" alt="" class="cross" />
+                            </div>
+                            <div class="overflowedDiv">
+                                <p>
+                                    <code>
+                                        class Main {<br>
+                                            public static void main(String ap[]) {<br>
+                                                // Hex to Decimal conversion<br>
+                                                String hex = "A";<br>
+                                                int decimal = Integer.parseInt(hex, 16);<br>
+                                                System.out.println("Hex to Decimal: " + decimal);<br>
+                                            }<br>
+                                        }<br>
+                                    </code>
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="ques">
+                            <div class="heading top">
+                                <h5>28. How to convert Decimal to Hex</h5>
+                                <img src="images/cross.png" alt="" class="cross" />
+                            </div>
+                            <div class="overflowedDiv">
+                                <p>
+                                    <code>
+                                        class Main {<br>
+                                            public static void main(String ap[]) {<br>
+                                                // Decimal to Hex conversion<br>
+                                                int decimal = 10;<br>
+                                                String hex = Integer.toHexString(decimal);<br>
+                                                System.out.println("Decimal to Hex: " + hex);<br>
+                                            }<br>
+                                        }<br>
+                                    </code>
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="ques">
+                            <div class="heading top">
+                                <h5>29. How to convert Octal to Decimal</h5>
+                                <img src="images/cross.png" alt="" class="cross" />
+                            </div>
+                            <div class="overflowedDiv">
+                                <p>
+                                    <code>
+                                        class Main {<br>
+                                            public static void main(String ap[]) {<br>
+                                                // Octal to Decimal conversion<br>
+                                                String octal = "12";<br>
+                                                int decimal = Integer.parseInt(octal, 8);<br>
+                                                System.out.println("Octal to Decimal: " + decimal);<br>
+                                            }<br>
+                                        }<br>
+                                    </code>
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="ques">
+                            <div class="heading top">
+                                <h5>29. How to convert Octal to Decimal</h5>
+                                <img src="images/cross.png" alt="" class="cross" />
+                            </div>
+                            <div class="overflowedDiv">
+                                <p>
+                                    <code>
+                                        class Main {<br>
+                                            public static void main(String ap[]) {<br>
+                                                // Octal to Decimal conversion<br>
+                                                String octal = "12";<br>
+                                                int decimal = Integer.parseInt(octal, 8);<br>
+                                                System.out.println("Octal to Decimal: " + decimal);<br>
+                                            }<br>
+                                        }<br>
+                                    </code>
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="ques">
+                            <div class="heading top">
+                                <h5>30. How to convert Decimal to Octal</h5>
+                                <img src="images/cross.png" alt="" class="cross" />
+                            </div>
+                            <div class="overflowedDiv">
+                                <p>
+                                    <code>
+                                        class Main {<br>
+                                            public static void main(String ap[]) {<br>
+                                                // Decimal to Octal conversion<br>
+                                                int decimal = 10;<br>
+                                                String octal = Integer.toOctalString(decimal);<br>
+                                                System.out.println("Decimal to Octal: " + octal);<br>
+                                            }<br>
+                                        }<br>
+                                    </code>
+                                </p>
+                            </div>
+                        </div>
+
+
+
+<!-- awt -->
+                        <div class="ques">
+                            <div class="heading top">
+                                <h5>Heading</h5>
+                                <img src="images/cross.png" alt="" class="cross" />
+                            </div>
+                            <div class="overflowedDiv">
+                                <p>
+                                    <code>
+                                        import java.awt.*; <br>
+import java.awt.event.*; <br>
+class myFrame extends Frame{ <br>
+    Button b1 = new Button(); <br>
+    TextField tf1 = new TextField(); <br>
+    myFrame(){ <br>
+        add(tf1); <br>
+        add(b1); <br>
+        setBounds(10,20,500,500); <br>
+        setTitle("MyFrame"); <br>
+        setVisible(true); <br>
+        setLayout(new FlowLayout()); <br>
+        b1.setLabel("Submit"); <br>
+        tf1.setText("hellp"); <br>
+        tf1.addKeyListener(new KeyAdapter(){ <br>
+        
+        public void keyTyped(java.awt.event.KeyEvent e){ <br>
+            
+
+    }); <br>
+       
+
+        b1.addMouseListener(new MouseAdapter() { <br>
+            public void mouseClicked(java.awt.event.MouseEvent e){ <br>
+                    System.out.println(tf1.getText()); <br>
+            }     <br>
+        } <br>
+        ); <br>
+    } <br>
+  
+
+} <br>
+
+class awt { <br>
+    public static void main(String ap[]){ <br>
+            myFrame f1 = new myFrame(); <br>
+
+    } <br>
+} <br>
+
+                                    </code>
+                                </p>
+                            </div>
+                        </div>
+                        
+                        
+                    
+                    </div>
+                </div>
+            </div>
+                   
+        </div> 
+          
+    </div>
+
+    </main>
+<script src="/script.js"></script>
+</body>
+</html>
+
+

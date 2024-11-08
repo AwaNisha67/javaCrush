@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Bootstarp-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>CodeCrush</title>
+    <link rel="stylesheet" href="/eg.css">
+</head>
+<body>
+   
+    <main>
+
+         <nav class="container">
+            <div class="logoDiv">
+                <img class="logo"  alt="Logo" src="/images/clogo1.png"/>
+            </div>
+            <div class="list-items-div">
+                <ul class="lits-items-container">
+                    <li class="list-items"><a href="/index.html">main</a></li>
+                    <li class="list-items"><a href="/index.html">about</a></li>
+                    <li class="list-items"><a href="/practice.html">practice</a></li>
+                </ul>
+            </div>
+            <div class="search">
+                <!-- logo -->
+                <i class="bi bi-search"></i>
+            </div>
+        </nav> 
+
+    <div class="background-images">
+        <!-- <img  class="images" src="./images/dots.276a62aa.svg" alt="dotted background"> -->
+       <!-- <img style="top: -40px;" class="images" src="./images/bgblur.19fa1f96.svg" alt="graySparkle"> -->
+        <!-- <img src="./images/hammer.a618d04a.svg" alt="hammer" class="hammer"> -->
+        <img src="./images/spanner.3acd9d9d.svg" alt="spanner" class="spanner">
+    </div>
+
+   
+    <div class="table-super-div">
+        <div class="table-sub-div">
+            <div class="left-table-content">
+                <div class="left-table-paragraph-text">
+                    <p>Java Topics</p>
+                </div>
+                <a class="java-topics activeTopic" href="/awt/awt.html">AWT</a>
+                <a class="java-topics" href="/arrays/solArrq1.html">Arrays</a>
+                <a class="java-topics" href="/2dArray/2dArray.html">2d-Arrays</a>
+                <a class="java-topics" href="/Strings/strings.html">Strings</a>
+                <a class="java-topics" href="/inheritence/inhert1.html">Inheritence</a>
+                <a class="java-topics" href="/interfaces/interfaces.html">Interfaces</a>
+                <a class="java-topics" href="/package/package.html">Packages</a>
+                <a class="java-topics" href="/exception handling/exceptions.html">Exception-Handling</a>
+                <a class="java-topics" href="/inputOutput/io.html">Input/Output</a>
+                <a class="java-topics" href="/jdbc/jdbc.html">JDBC</a>
+                <a class="java-topics" href="/data conversion/dc1.html">Data Conversion</a>
+                <a class="java-topics" href="/delegation eventModel/dEM.html">Delegation Event model</a>
+                <a class="java-topics" href="/multithreading/multithreading.html">Multithreading</a>
+                <a style="display: none;" class="java-topics" href="/basics construct/basicConstruct.html" >Basic Construct</a>
+           </div>
+             <div class="right-table-content">
+                <div class="right-table-paragraph-text">
+                    <p>AWT practice questions</p> 
+                </div>
+                <div class="inheritQuest">
+                    <div class="questionContainer">
+
+<!-- awt -->
+<div class="ques">
+    <div class="heading top">
+        <h5>1. Create a simple AWT application that displays a button with FlowLayout manager</h5>
+        <img src="images/cross.png" alt="" class="cross" />
+    </div>
+    <div class="overflowedDiv">
+        <p>
+            <code>
+               &nbsp;import java.awt.*; <br>
+               &nbsp;class ButtonFlowLayout extends Frame { <br>
+                   &nbsp;&nbsp;&nbsp;Button btn = new Button("Click Me"); <br>
+                   &nbsp;&nbsp;&nbsp;ButtonFlowLayout(){ <br>
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;setLayout(new FlowLayout()); <br>
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;add(btn); <br>
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;setSize(300,200); <br>
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;setVisible(true); <br>
+                   &nbsp;&nbsp;&nbsp;} <br>
+                   &nbsp;&nbsp;&nbsp;public static void main(String ap[]){ <br>
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;new ButtonFlowLayout(); <br>
+                   &nbsp;&nbsp;&nbsp;} <br>
+               &nbsp;&nbsp;&nbsp;} <br>
+            </code>
+        </p>
+    </div>
+</div>
+
+<div class="ques">
+    <div class="heading top">
+        <h5>2. Create a simple AWT application that displays a button with Custom Layout</h5>
+        <img src="images/cross.png" alt="" class="cross" />
+    </div>
+    <div class="overflowedDiv">
+        <p>
+            <code>
+               &nbsp;import java.awt.*; <br>
+               &nbsp;class ButtonCustomLayout extends Frame { <br>
+                   &nbsp;&nbsp;&nbsp;Button btn = new Button("Click Me"); <br>
+                   &nbsp;&nbsp;&nbsp;ButtonCustomLayout(){ <br>
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;setLayout(new GridLayout(1, 1)); <br>
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;add(btn); <br>
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;setSize(300,200); <br>
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;setVisible(true); <br>
+                   &nbsp;&nbsp;&nbsp;} <br>
+                   &nbsp;&nbsp;&nbsp;public static void main(String ap[]){ <br>
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;new ButtonCustomLayout(); <br>
+                   &nbsp;&nbsp;&nbsp;} <br>
+               &nbsp;&nbsp;&nbsp;} <br>
+            </code>
+        </p>
+    </div>
+</div>
+
+<div class="ques">
+    <div class="heading top">
+        <h5>3. Create a simple AWT application that displays multiple buttons with BorderLayout manager (North, East, West, South, Center)</h5>
+        <img src="images/cross.png" alt="" class="cross" />
+    </div>
+    <div class="overflowedDiv">
+        <p>
+            <code>
+               &nbsp;import java.awt.*; <br>
+               &nbsp;class ButtonBorderLayout extends Frame { <br>
+                   &nbsp;&nbsp;&nbsp;Button btn1 = new Button("North"); <br>
+                   &nbsp;&nbsp;&nbsp;Button btn2 = new Button("East"); <br>
+                   &nbsp;&nbsp;&nbsp;Button btn3 = new Button("West"); <br>
+                   &nbsp;&nbsp;&nbsp;Button btn4 = new Button("South"); <br>
+                   &nbsp;&nbsp;&nbsp;Button btn5 = new Button("Center"); <br>
+                   &nbsp;&nbsp;&nbsp;ButtonBorderLayout(){ <br>
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;setLayout(new BorderLayout()); <br>
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;add(btn1, BorderLayout.NORTH); <br>
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;add(btn2, BorderLayout.EAST); <br>
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;add(btn3, BorderLayout.WEST); <br>
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;add(btn4, BorderLayout.SOUTH); <br>
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;add(btn5, BorderLayout.CENTER); <br>
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;setSize(400,300); <br>
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;setVisible(true); <br>
+                   &nbsp;&nbsp;&nbsp;} <br>
+                   &nbsp;&nbsp;&nbsp;public static void main(String ap[]){ <br>
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;new ButtonBorderLayout(); <br>
+                   &nbsp;&nbsp;&nbsp;} <br>
+               &nbsp;&nbsp;&nbsp;} <br>
+            </code>
+        </p>
+    </div>
+</div>
+
+<div class="ques">
+    <div class="heading top">
+        <h5>4. Create a simple AWT application that displays a TextField with FlowLayout manager</h5>
+        <img src="images/cross.png" alt="" class="cross" />
+    </div>
+    <div class="overflowedDiv">
+        <p>
+            <code>
+               &nbsp;import java.awt.*; <br>
+               &nbsp;class TextFieldFlowLayout extends Frame { <br>
+                   &nbsp;&nbsp;&nbsp;TextField tf = new TextField(); <br>
+                   &nbsp;&nbsp;&nbsp;TextFieldFlowLayout(){ <br>
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;setLayout(new FlowLayout()); <br>
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;add(tf); <br>
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;setSize(300,200); <br>
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;setVisible(true); <br>
+                   &nbsp;&nbsp;&nbsp;} <br>
+                   &nbsp;&nbsp;&nbsp;public static void main(String ap[]){ <br>
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;new TextFieldFlowLayout(); <br>
+                   &nbsp;&nbsp;&nbsp;} <br>
+               &nbsp;&nbsp;&nbsp;} <br>
+            </code>
+        </p>
+    </div>
+</div>
+
+<div class="ques">
+    <div class="heading top">
+        <h5>5. Create a simple AWT application that displays a TextField with Custom Layout</h5>
+        <img src="images/cross.png" alt="" class="cross" />
+    </div>
+    <div class="overflowedDiv">
+        <p>
+            <code>
+               &nbsp;import java.awt.*; <br>
+               &nbsp;class TextFieldCustomLayout extends Frame { <br>
+                   &nbsp;&nbsp;&nbsp;TextField tf = new TextField(); <br>
+                   &nbsp;&nbsp;&nbsp;TextFieldCustomLayout(){ <br>
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;setLayout(new GridLayout(1, 1)); <br>
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;add(tf); <br>
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;setSize(300,200); <br>
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;setVisible(true); <br>
+                   &nbsp;&nbsp;&nbsp;} <br>
+                   &nbsp;&nbsp;&nbsp;public static void main(String ap[]){ <br>
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;new TextFieldCustomLayout(); <br>
+                   &nbsp;&nbsp;&nbsp;} <br>
+               &nbsp;&nbsp;&nbsp;} <br>
+            </code>
+        </p>
+    </div>
+</div>
+
+<div class="ques">
+    <div class="heading top">
+        <h5>6. Create a simple AWT application that displays a Checkbox with FlowLayout manager</h5>
+        <img src="images/cross.png" alt="" class="cross" />
+    </div>
+    <div class="overflowedDiv">
+        <p>
+            <code>
+               &nbsp;import java.awt.*; <br>
+               &nbsp;class CheckboxFlowLayout extends Frame { <br>
+                   &nbsp;&nbsp;&nbsp;Checkbox cb = new Checkbox("Accept Terms"); <br>
+                   &nbsp;&nbsp;&nbsp;CheckboxFlowLayout(){ <br>
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;setLayout(new FlowLayout()); <br>
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;add(cb); <br>
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;setSize(300,200); <br>
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;setVisible(true); <br>
+                   &nbsp;&nbsp;&nbsp;} <br>
+                   &nbsp;&nbsp;&nbsp;public static void main(String ap[]){ <br>
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;new CheckboxFlowLayout(); <br>
+                   &nbsp;&nbsp;&nbsp;} <br>
+               &nbsp;&nbsp;&nbsp;} <br>
+            </code>
+        </p>
+    </div>
+</div>
+
+<div class="ques">
+    <div class="heading top">
+        <h5>7. Create a simple AWT application that displays a Checkbox with Custom Layout</h5>
+        <img src="images/cross.png" alt="" class="cross" />
+    </div>
+    <div class="overflowedDiv">
+        <p>
+            <code>
+               &nbsp;import java.awt.*; <br>
+               &nbsp;class CheckboxCustomLayout extends Frame { <br>
+                   &nbsp;&nbsp;&nbsp;Checkbox cb = new Checkbox("Accept Terms"); <br>
+                   &nbsp;&nbsp;&nbsp;CheckboxCustomLayout(){ <br>
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;setLayout(new GridLayout(1, 1)); <br>
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;add(cb); <br>
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;setSize(300,200); <br>
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;setVisible(true); <br>
+                   &nbsp;&nbsp;&nbsp;} <br>
+                   &nbsp;&nbsp;&nbsp;public static void main(String ap[]){ <br>
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;new CheckboxCustomLayout(); <br>
+                   &nbsp;&nbsp;&nbsp;} <br>
+               &nbsp;&nbsp;&nbsp;} <br>
+            </code>
+        </p>
+    </div>
+</div>
+
+<div class="ques">
+    <div class="heading top">
+        <h5>8. Create a simple AWT application that displays a Label with FlowLayout manager</h5>
+        <img src="images/cross.png" alt="" class="cross" />
+    </div>
+    <div class="overflowedDiv">
+        <p>
+            <code>
+               &nbsp;import java.awt.*; <br>
+               &nbsp;class LabelFlowLayout extends Frame { <br>
+                   &nbsp;&nbsp;&nbsp;Label lbl = new Label("Welcome to AWT!"); <br>
+                   &nbsp;&nbsp;&nbsp;LabelFlowLayout(){ <br>
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;setLayout(new FlowLayout()); <br>
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;add(lbl); <br>
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;setSize(300,200); <br>
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;setVisible(true); <br>
+                   &nbsp;&nbsp;&nbsp;} <br>
+                   &nbsp;&nbsp;&nbsp;public static void main(String ap[]){ <br>
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;new LabelFlowLayout(); <br>
+                   &nbsp;&nbsp;&nbsp;} <br>
+               &nbsp;&nbsp;&nbsp;} <br>
+            </code>
+        </p>
+    </div>
+</div>
+
+<div class="ques">
+    <div class="heading top">
+        <h5>9. Create a simple AWT application that displays a Label with Custom Layout</h5>
+        <img src="images/cross.png" alt="" class="cross" />
+    </div>
+    <div class="overflowedDiv">
+        <p>
+            <code>
+               &nbsp;import java.awt.*; <br>
+               &nbsp;class LabelCustomLayout extends Frame { <br>
+                   &nbsp;&nbsp;&nbsp;Label lbl = new Label("Welcome to AWT!"); <br>
+                   &nbsp;&nbsp;&nbsp;LabelCustomLayout(){ <br>
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;setLayout(new GridLayout(1, 1)); <br>
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;add(lbl); <br>
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;setSize(300,200); <br>
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;setVisible(true); <br>
+                   &nbsp;&nbsp;&nbsp;} <br>
+                   &nbsp;&nbsp;&nbsp;public static void main(String ap[]){ <br>
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;new LabelCustomLayout(); <br>
+                   &nbsp;&nbsp;&nbsp;} <br>
+               &nbsp;&nbsp;&nbsp;} <br>
+            </code>
+        </p>
+    </div>
+</div>
+
+
+<div class="ques">
+    <div class="heading top">
+        <h5>10. Create a simple AWT application that displays a Choice with FlowLayout manager</h5>
+        <img src="images/cross.png" alt="" class="cross" />
+    </div>
+    <div class="overflowedDiv">
+        <p>
+            <code>
+               &nbsp;import java.awt.*; <br>
+               &nbsp;class ChoiceFlowLayout extends Frame { <br>
+                   &nbsp;&nbsp;&nbsp;Choice ch = new Choice(); <br>
+                   &nbsp;&nbsp;&nbsp;ChoiceFlowLayout(){ <br>
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ch.add("Option 1"); <br>
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ch.add("Option 2"); <br>
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ch.add("Option 3"); <br>
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;setLayout(new FlowLayout()); <br>
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;add(ch); <br>
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;setSize(300,200); <br>
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;setVisible(true); <br>
+                   &nbsp;&nbsp;&nbsp;} <br>
+                   &nbsp;&nbsp;&nbsp;public static void main(String ap[]){ <br>
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;new ChoiceFlowLayout(); <br>
+                   &nbsp;&nbsp;&nbsp;} <br>
+               &nbsp;&nbsp;&nbsp;} <br>
+            </code>
+        </p>
+    </div>
+</div>
+
+<div class="ques">
+    <div class="heading top">
+        <h5>11. Create a simple AWT application that displays a Choice with Custom Layout</h5>
+        <img src="images/cross.png" alt="" class="cross" />
+    </div>
+    <div class="overflowedDiv">
+        <p>
+            <code>
+               &nbsp;import java.awt.*; <br>
+               &nbsp;class ChoiceCustomLayout extends Frame { <br>
+                   &nbsp;&nbsp;&nbsp;Choice ch = new Choice(); <br>
+                   &nbsp;&nbsp;&nbsp;ChoiceCustomLayout(){ <br>
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ch.add("Option 1"); <br>
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ch.add("Option 2"); <br>
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ch.add("Option 3"); <br>
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;setLayout(new GridLayout(1, 1)); <br>
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;add(ch); <br>
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;setSize(300,200); <br>
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;setVisible(true); <br>
+                   &nbsp;&nbsp;&nbsp;} <br>
+                   &nbsp;&nbsp;&nbsp;public static void main(String ap[]){ <br>
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;new ChoiceCustomLayout(); <br>
+                   &nbsp;&nbsp;&nbsp;} <br>
+               &nbsp;&nbsp;&nbsp;} <br>
+            </code>
+        </p>
+    </div>
+</div>
+
+<div class="ques">
+    <div class="heading top">
+        <h5>12. Create a simple AWT application that displays a CheckboxGroup with FlowLayout manager</h5>
+        <img src="images/cross.png" alt="" class="cross" />
+    </div>
+    <div class="overflowedDiv">
+        <p>
+            <code>
+               &nbsp;import java.awt.*; <br>
+               &nbsp;class CheckboxGroupFlowLayout extends Frame { <br>
+                   &nbsp;&nbsp;&nbsp;CheckboxGroup group = new CheckboxGroup(); <br>
+                   &nbsp;&nbsp;&nbsp;Checkbox cb1 = new Checkbox("Option 1", group, false); <br>
+                   &nbsp;&nbsp;&nbsp;Checkbox cb2 = new Checkbox("Option 2", group, false); <br>
+                   &nbsp;&nbsp;&nbsp;Checkbox cb3 = new Checkbox("Option 3", group, false); <br>
+                   &nbsp;&nbsp;&nbsp;CheckboxGroupFlowLayout(){ <br>
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;setLayout(new FlowLayout()); <br>
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;add(cb1); <br>
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;add(cb2); <br>
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;add(cb3); <br>
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;setSize(300,200); <br>
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;setVisible(true); <br>
+                   &nbsp;&nbsp;&nbsp;} <br>
+                   &nbsp;&nbsp;&nbsp;public static void main(String ap[]){ <br>
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;new CheckboxGroupFlowLayout(); <br>
+                   &nbsp;&nbsp;&nbsp;} <br>
+               &nbsp;&nbsp;&nbsp;} <br>
+            </code>
+        </p>
+    </div>
+</div>
+
+<div class="ques">
+    <div class="heading top">
+        <h5>13. Create a simple AWT application that displays a CheckboxGroup with Custom Layout</h5>
+        <img src="images/cross.png" alt="" class="cross" />
+    </div>
+    <div class="overflowedDiv">
+        <p>
+            <code>
+               &nbsp;import java.awt.*; <br>
+               &nbsp;class CheckboxGroupCustomLayout extends Frame { <br>
+                   &nbsp;&nbsp;&nbsp;CheckboxGroup group = new CheckboxGroup(); <br>
+                   &nbsp;&nbsp;&nbsp;Checkbox cb1 = new Checkbox("Option 1", group, false); <br>
+                   &nbsp;&nbsp;&nbsp;Checkbox cb2 = new Checkbox("Option 2", group, false); <br>
+                   &nbsp;&nbsp;&nbsp;Checkbox cb3 = new Checkbox("Option 3", group, false); <br>
+                   &nbsp;&nbsp;&nbsp;CheckboxGroupCustomLayout(){ <br>
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;setLayout(new GridLayout(3, 1)); <br>
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;add(cb1); <br>
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;add(cb2); <br>
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;add(cb3); <br>
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;setSize(300,200); <br>
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;setVisible(true); <br>
+                   &nbsp;&nbsp;&nbsp;} <br>
+                   &nbsp;&nbsp;&nbsp;public static void main(String ap[]){ <br>
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;new CheckboxGroupCustomLayout(); <br>
+                   &nbsp;&nbsp;&nbsp;} <br>
+               &nbsp;&nbsp;&nbsp;} <br>
+            </code>
+        </p>
+    </div>
+</div>
+
+<div class="ques">
+    <div class="heading top">
+        <h5>14. Create a simple AWT application that displays a List with FlowLayout manager</h5>
+        <img src="images/cross.png" alt="" class="cross" />
+    </div>
+    <div class="overflowedDiv">
+        <p>
+            <code>
+               &nbsp;import java.awt.*; <br>
+               &nbsp;class ListFlowLayout extends Frame { <br>
+                   &nbsp;&nbsp;&nbsp;List lst = new List(); <br>
+                   &nbsp;&nbsp;&nbsp;ListFlowLayout(){ <br>
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lst.add("Item 1"); <br>
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lst.add("Item 2"); <br>
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lst.add("Item 3"); <br>
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;setLayout(new FlowLayout()); <br>
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;add(lst); <br>
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;setSize(300,200); <br>
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;setVisible(true); <br>
+                   &nbsp;&nbsp;&nbsp;} <br>
+                   &nbsp;&nbsp;&nbsp;public static void main(String ap[]){ <br>
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;new ListFlowLayout(); <br>
+                   &nbsp;&nbsp;&nbsp;} <br>
+               &nbsp;&nbsp;&nbsp;} <br>
+            </code>
+        </p>
+    </div>
+</div>
+
+<div class="ques">
+    <div class="heading top">
+        <h5>15. Create a simple AWT application that displays a List with Custom Layout</h5>
+        <img src="images/cross.png" alt="" class="cross" />
+    </div>
+    <div class="overflowedDiv">
+        <p>
+            <code>
+               &nbsp;import java.awt.*; <br>
+               &nbsp;class ListCustomLayout extends Frame { <br>
+                   &nbsp;&nbsp;&nbsp;List lst = new List(); <br>
+                   &nbsp;&nbsp;&nbsp;ListCustomLayout(){ <br>
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lst.add("Item 1"); <br>
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lst.add("Item 2"); <br>
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lst.add("Item 3"); <br>
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;setLayout(new GridLayout(1, 1)); <br>
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;add(lst); <br>
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;setSize(300,200); <br>
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;setVisible(true); <br>
+                   &nbsp;&nbsp;&nbsp;} <br>
+                   &nbsp;&nbsp;&nbsp;public static void main(String ap[]){ <br>
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;new ListCustomLayout(); <br>
+                   &nbsp;&nbsp;&nbsp;} <br>
+               &nbsp;&nbsp;&nbsp;} <br>
+            </code>
+        </p>
+    </div>
+</div>
+
+<div class="ques">
+    <div class="heading top">
+        <h5>16. Create a simple AWT application that displays a TextArea with FlowLayout manager</h5>
+        <img src="images/cross.png" alt="" class="cross" />
+    </div>
+    <div class="overflowedDiv">
+        <p>
+            <code>
+               &nbsp;import java.awt.*; <br>
+               &nbsp;class TextAreaFlowLayout extends Frame { <br>
+                   &nbsp;&nbsp;&nbsp;TextArea ta = new TextArea(); <br>
+                   &nbsp;&nbsp;&nbsp;TextAreaFlowLayout(){ <br>
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;setLayout(new FlowLayout()); <br>
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;add(ta); <br>
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;setSize(300,200); <br>
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;setVisible(true); <br>
+                   &nbsp;&nbsp;&nbsp;} <br>
+                   &nbsp;&nbsp;&nbsp;public static void main(String ap[]){ <br>
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;new TextAreaFlowLayout(); <br>
+                   &nbsp;&nbsp;&nbsp;} <br>
+               &nbsp;&nbsp;&nbsp;} <br>
+            </code>
+        </p>
+    </div>
+</div>
+
+<div class="ques">
+    <div class="heading top">
+        <h5>17. Create a simple AWT application that displays a TextArea with Custom Layout</h5>
+        <img src="images/cross.png" alt="" class="cross" />
+    </div>
+    <div class="overflowedDiv">
+        <p>
+            <code>
+               &nbsp;import java.awt.*; <br>
+               &nbsp;class TextAreaCustomLayout extends Frame { <br>
+                   &nbsp;&nbsp;&nbsp;TextArea ta = new TextArea(); <br>
+                   &nbsp;&nbsp;&nbsp;TextAreaCustomLayout(){ <br>
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;setLayout(new GridLayout(1, 1)); <br>
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;add(ta); <br>
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;setSize(300,200); <br>
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;setVisible(true); <br>
+                   &nbsp;&nbsp;&nbsp;} <br>
+                   &nbsp;&nbsp;&nbsp;public static void main(String ap[]){ <br>
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;new TextAreaCustomLayout(); <br>
+                   &nbsp;&nbsp;&nbsp;} <br>
+               &nbsp;&nbsp;&nbsp;} <br>
+            </code>
+        </p>
+    </div>
+</div>
+
+<div class="ques">
+    <div class="heading top">
+        <h5>18. Create a simple AWT application to design a calculator that displays buttons, TextField with GridLayout manager</h5>
+        <img src="images/cross.png" alt="" class="cross" />
+    </div>
+    <div class="overflowedDiv">
+        <p>
+            <code>
+               &nbsp;import java.awt.*; <br>
+               &nbsp;import java.awt.event.*; <br>
+               &nbsp;class Calculator extends Frame implements ActionListener { <br>
+                   &nbsp;&nbsp;&nbsp;TextField tf = new TextField(); <br>
+                   &nbsp;&nbsp;&nbsp;Button b1 = new Button("1"); <br>
+                   &nbsp;&nbsp;&nbsp;Button b2 = new Button("2"); <br>
+                   &nbsp;&nbsp;&nbsp;Button b3 = new Button("3"); <br>
+                   &nbsp;&nbsp;&nbsp;Button b4 = new Button("4"); <br>
+                   &nbsp;&nbsp;&nbsp;Button b5 = new Button("5"); <br>
+                   &nbsp;&nbsp;&nbsp;Button b6 = new Button("6"); <br>
+                   &nbsp;&nbsp;&nbsp;Button b7 = new Button("7"); <br>
+                   &nbsp;&nbsp;&nbsp;Button b8 = new Button("8"); <br>
+                   &nbsp;&nbsp;&nbsp;Button b9 = new Button("9"); <br>
+                   &nbsp;&nbsp;&nbsp;Button b0 = new Button("0"); <br>
+                   &nbsp;&nbsp;&nbsp;Button bAdd = new Button("+"); <br>
+                   &nbsp;&nbsp;&nbsp;Button bSub = new Button("-"); <br>
+                   &nbsp;&nbsp;&nbsp;Button bMul = new Button("*"); <br>
+                   &nbsp;&nbsp;&nbsp;Button bDiv = new Button("/"); <br>
+                   &nbsp;&nbsp;&nbsp;Button bEq = new Button("="); <br>
+                   &nbsp;&nbsp;&nbsp;Button bClr = new Button("C"); <br>
+                   &nbsp;&nbsp;&nbsp;String input = ""; <br>
+                   &nbsp;&nbsp;&nbsp;Calculator(){ <br>
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;setLayout(new GridLayout(5, 4)); <br>
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;add(tf); <br>
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;add(b1); <br>
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;add(b2); <br>
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;add(b3); <br>
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;add(b4); <br>
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;add(b5); <br>
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;add(b6); <br>
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;add(b7); <br>
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;add(b8); <br>
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;add(b9); <br>
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;add(b0); <br>
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;add(bAdd); <br>
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;add(bSub); <br>
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;add(bMul); <br>
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;add(bDiv); <br>
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;add(bEq); <br>
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;add(bClr); <br>
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b1.addActionListener(this); <br>
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b2.addActionListener(this); <br>
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b3.addActionListener(this); <br>
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b4.addActionListener(this); <br>
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b5.addActionListener(this); <br>
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b6.addActionListener(this); <br>
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b7.addActionListener(this); <br>
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b8.addActionListener(this); <br>
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b9.addActionListener(this); <br>
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b0.addActionListener(this); <br>
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;bAdd.addActionListener(this); <br>
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;bSub.addActionListener(this); <br>
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;bMul.addActionListener(this); <br>
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;bDiv.addActionListener(this); <br>
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;bEq.addActionListener(this); <br>
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;bClr.addActionListener(this); <br>
+                   &nbsp;&nbsp;&nbsp;} <br>
+                   &nbsp;&nbsp;&nbsp;public void actionPerformed(ActionEvent e){ <br>
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(e.getSource() == b1){ input += "1"; tf.setText(input);} <br>
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(e.getSource() == b2){ input += "2"; tf.setText(input);} <br>
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(e.getSource() == b3){ input += "3"; tf.setText(input);} <br>
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(e.getSource() == b4){ input += "4"; tf.setText(input);} <br>
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(e.getSource() == b5){ input += "5"; tf.setText(input);} <br>
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(e.getSource() == b6){ input += "6"; tf.setText(input);} <br>
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(e.getSource() == b7){ input += "7"; tf.setText(input);} <br>
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(e.getSource() == b8){ input += "8"; tf.setText(input);} <br>
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(e.getSource() == b9){ input += "9"; tf.setText(input);} <br>
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(e.getSource() == b0){ input += "0"; tf.setText(input);} <br>
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(e.getSource() == bAdd){ input += "+"; tf.setText(input);} <br>
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(e.getSource() == bSub){ input += "-"; tf.setText(input);} <br>
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(e.getSource() == bMul){ input += "*"; tf.setText(input);} <br>
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(e.getSource() == bDiv){ input += "/"; tf.setText(input);} <br>
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(e.getSource() == bClr){ input = ""; tf.setText(input);} <br>
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(e.getSource() == bEq){ 
+                           try{ input = evaluateExpression(input); tf.setText(input);} 
+                           catch (Exception ex){ tf.setText("Error"); input = "";} 
+                       } <br>
+                   &nbsp;&nbsp;&nbsp;} <br>
+                   &nbsp;&nbsp;&nbsp;public static void main(String ap[]){ <br>
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;new Calculator(); <br>
+                   &nbsp;&nbsp;&nbsp;} <br>
+               &nbsp;&nbsp;&nbsp;} <br>
+            </code>
+        </p>
+    </div>
+</div>
+
+
+                        
+                    
+                    </div>
+                </div>
+            </div>
+                   
+        </div> 
+          
+    </div>
+
+    </main>
+<script src="/script.js"></script>
+</body>
+</html>
+
+
